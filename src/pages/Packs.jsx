@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './styles/Packs.css'
-import { packs } from '../../public/utils/data.json'
+import { packs } from '../assets/utils/data.json'
 
 const Packs = () => {
 
