@@ -3,17 +3,17 @@
         {
             "id": 1,
             "title": "Buffet Select",
-            "image": "/src/assets/Images/packimg1.jpg"
+            "image": "../src/assets/Images/packimg1.jpg"
         },
         {
             "id": 2,
             "title": "Buffet Prime",
-            "image": "/src/assets/Images/packimg2.jpg"
+            "image": "../src/assets/Images/packimg2.jpg"
         },
         {
             "id": 3,
             "title": "Buffet Mar y Tierra",
-            "image": "/src/assets/Images/packimg3.jpg"
+            "image": "../src/assets/Images/packimg3.jpg"
         }
     ]
 }
