@@ -1,0 +1,143 @@
+.aboutSection {
+    padding: 0;
+    margin: 0;
+    background-image: url('../../assets/Images/background.jpg');
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.aboutContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 90%;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 100%;
+    gap: 30px;
+    margin: 0 auto;
+
+}
+
+.item1 {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+    background-image: url('../../assets/Images/img1.jpg');
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.item2 {
+    grid-column: 2 / 3;
+    grid-row: 1/3;
+    background-image: url('../../assets/Images/img2.jpg');
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.item3 {
+    grid-column: 1 / 2;
+    grid-row: 2/3;
+    background-image: url('../../assets/Images/img3.jpg');
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.item4 {
+    grid-column: 1 / 2;
+    grid-row: 3/4;
+    background-image: url('../../assets/Images/img4.jpg');
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.item5 {
+    grid-column: 2 / 3;
+    grid-row: 3/4;
+    background-image: url('../../assets/Images/img5.jpg');
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.item6 {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+    background-image: url('../../assets/Images/img6.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.item7 {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+    background-image: url('../../assets/vectortitle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.title1 {
+    position: absolute;
+    color: white;
+    font-size: 75px;
+    top: 0;
+    left: 40%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+
+}
+
+.title2 {
+    position: absolute;
+    color: white;
+    font-size: 75px;
+    top: 40%;
+    left: 60%;
+    transform: translateX(-50%);
+
+
+}
+
+.part1 {
+    margin: 0;
+    text-align: center;
+}
+
+.part2 {
+    margin: 0;
+}
+
+
+
+.item8 {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+    color: white;
+    justify-self: center;
+    align-self: center;
+    font-size: 21px;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}

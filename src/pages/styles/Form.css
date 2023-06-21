@@ -1,0 +1,131 @@
+.form-section {
+    background-image: url('../../assets/Images/background.jpg');
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 70%;
+    border-radius: 30px;
+}
+
+.form-container::before,
+.form-container::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.form-container::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: skewY(3deg);
+    z-index: -1;
+
+}
+
+.form-container::after {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform: skewY(3deg);
+    z-index: -1;
+}
+
+.title-container {
+    background-image: url('../../assets/vectortitle.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 20%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+
+.title-form {
+    font-size: 75px;
+    color: gray;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 2%;
+}
+
+.input1 {
+    width: 40%;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input1:focus {
+    outline: none;
+}
+
+
+
+.text-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.text-area textarea {
+    width: 82%;
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.text-area textarea:focus {
+    outline: none;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button button {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #f46d00;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.button button:hover {
+    background-color: #ee7716;
+}
