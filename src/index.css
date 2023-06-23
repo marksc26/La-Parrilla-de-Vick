@@ -1,4 +1,5 @@
 @font-face {
     font-family: "Gobold";
     src: url('../src/assets/fonts/GoboldItalic.otf') format('opentype');
+    font-display: swap;
 }
