@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     color: white;
-    height: 105px;
+    height: 120px;
     padding: 5px 0;
     background: rgba(128, 128, 128, 0.123);
 
@@ -20,7 +20,7 @@
 }
 
 .logo {
-    width: 95px;
+    width: 105px;
 }
 
 .menuContainer {
@@ -38,10 +38,91 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
+    padding: 0;
 }
 
 .list-navbar li {
     list-style: none;
     font-size: 22px;
     cursor: pointer;
+    font-family: "Gobold", sans-serif;
+    transition: all 600ms ease;
+
+}
+
+.list-navbar li:hover {
+    color: #f46d00;
+}
+
+.close-container {
+    display: none;
+}
+
+@media(max-width: 1000px) {
+    .header {
+        height: 100px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .list-navbar li {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 810px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: white;
+        color: black;
+        width: 25%;
+        height: 100vh;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        transition: all 1000ms ease-in-out;
+    }
+
+    .show-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: white;
+        color: black;
+        width: 25%;
+        height: 100vh;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        transition: all 700ms ease-in-out;
+    }
+
+    .list-navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menuContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 70px;
+    }
+
+    .bx-menu {
+        font-size: 45px;
+        cursor: pointer;
+    }
+
+    .close-container {
+        display: flex;
+    }
+
 }

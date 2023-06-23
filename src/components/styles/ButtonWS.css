@@ -1,17 +1,20 @@
 .buttonws-container {
     position: fixed;
     bottom: 20px;
-    right: 10px;
+    right: 15px;
 
 }
 
 .whatsapp-logo {
     width: 60px;
     cursor: pointer;
-    transition: all 400ms ease-in-out;
+    will-change: filter;
+    transition: filter 800ms;
+
+
 
 }
 
 .whatsapp-logo:hover {
-    transform: translateY(-2px);
+    filter: drop-shadow(0 0 12px #01d661);
 }

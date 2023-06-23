@@ -1,10 +1,10 @@
 import React from 'react'
 import './styles/Form.css'
 
-const Form = () => {
+const Form = ({ formSectionRef }) => {
     return (
-        <section className='form-section'>
-            <div className='form-container'>
+        <section className='form-section' ref={formSectionRef}>
+            <div className='form-container' >
                 <div className='title-container'>
                     <div className='title-form'>
                         <h3>Contáctanos</h3>
@@ -18,7 +18,7 @@ const Form = () => {
                     </div>
 
                     <div className='text-area'>
-                        <textarea name="" id="" cols="30" rows="5" placeholder='Cuentanos sobre tu evento'></textarea>
+                        <textarea name="" id="" cols="30" rows="4" placeholder='Cuentanos sobre tu evento'></textarea>
                     </div>
 
                     <div className='button'>

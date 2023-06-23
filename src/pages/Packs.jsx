@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './styles/Packs.css'
 import { packs } from '../../public/data.json'
 
-const Packs = () => {
+const Packs = ({ packsSectionRef }) => {
 
     const [pack, setPack] = useState([])
 
@@ -11,9 +11,9 @@ const Packs = () => {
     }, [])
 
     return (
-        <section className='packs-section'>
+        <section className='packs-section' ref={packsSectionRef}>
 
-            <div className='title-pack'>
+            <div className='title-pack' >
                 <div className='title-pack-container'>
                     <h3>Paquetes</h3>
                 </div>
@@ -23,6 +23,7 @@ const Packs = () => {
             <div className='packs-container'>
                 {
                     pack.map(pack => (
+
                         <div className='card' key={pack.id}>
                             <div className='card-container'>
                                 <img className='imgCard' src={pack.image} alt="" />

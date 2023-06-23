@@ -9,17 +9,18 @@ const Footer = () => {
             <div className='footer-info'>
                 <div className='logo-container'>
                     <img className='logoFooter' src={logo} alt="" />
-                    <p>2023 La Parrilla de Vick</p>
+                    <p><i className='bx bx-copyright'></i>2023 La Parrilla de Vick</p>
                 </div>
 
                 <div className='social-media'>
-                    <h3>Síguenos</h3>
+                    <h3>Síguenos en</h3>
                     <div className='icons'>
                         <i className='bx bxl-facebook-circle'></i>
                         <i className='bx bxl-instagram'></i>
                         <i className='bx bxl-tiktok'></i>
                     </div>
-                    <div>
+                    <div className='telefono'>
+                        <p>Teléfono: 33 1462 3603</p>
                         <p>Aviso de Privacidad</p>
                     </div>
                 </div>

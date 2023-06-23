@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './styles/Home.css'
 import Header from '../layout/Header'
 import About from './About'
@@ -9,6 +9,9 @@ import Form from './Form'
 
 const Home = () => {
 
+    const aboutSectionRef = useRef(null)
+    const packsSectionRef = useRef(null)
+    const formSectionRef = useRef(null)
 
     const [scroll, setScroll] = useState(0)
 
@@ -27,14 +30,33 @@ const Home = () => {
 
     }, [])
 
+    const scrollToAbout = () => {
+        aboutSectionRef.current.scrollIntoView({ behavior: 'smooth' })
+    }
+
+    const scrollToPacks = () => {
+        packsSectionRef.current.scrollIntoView({ behavior: 'smooth' })
+    }
+
+    const scrollToForm = () => {
+        formSectionRef.current.scrollIntoView({ behavior: 'smooth' })
+    }
+
 
     return (
         <main>
-            <Header />
+            <Header
+                scrollToAbout={scrollToAbout}
+                scrollToPacks={scrollToPacks}
+                scrollToForm={scrollToForm}
+            />
             <section className='mainImage'></section>
-            <About />
-            <Packs />
-            <Form />
+            <div className='about-packs'>
+                <About aboutSectionRef={aboutSectionRef} />
+                <Packs packsSectionRef={packsSectionRef} />
+            </div>
+
+            <Form formSectionRef={formSectionRef} />
 
             {
                 scroll > 800 && (<ButtonWS />)

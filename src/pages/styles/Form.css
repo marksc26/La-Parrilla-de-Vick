@@ -1,9 +1,10 @@
 .form-section {
-    background-image: url('../../assets/Images/background.jpg');
+    background-image: url('../../assets/Images/form.jpg');
     background-position: center;
     height: 100vh;
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
 }
 
 .form-container {
@@ -59,8 +60,9 @@
 
 
 .title-form {
-    font-size: 75px;
-    color: gray;
+    font-size: 60px;
+    color: black;
+    font-family: "Gobold", sans-serif;
 }
 
 .inputs {
