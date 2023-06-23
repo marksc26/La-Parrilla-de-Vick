@@ -3,6 +3,7 @@ import logo from '../assets/LOGO_BN.png'
 import './styles/Header.css'
 
 
+
 const Header = ({ scrollToAbout, scrollToPacks, scrollToForm }) => {
 
     const [menu, setMenu] = useState(false)
@@ -24,7 +25,7 @@ const Header = ({ scrollToAbout, scrollToPacks, scrollToForm }) => {
 
             <div className={!menu ? "navbar" : "show-menu"}>
                 <div className='close-container'>
-                    <i class='bx bx-x' onClick={handleClose}></i>
+                    <i className='bx bx-x' onClick={handleClose}></i>
                 </div>
                 <ul className='list-navbar'>
                     <li onClick={scrollToAbout}>Quienes Somos</li>

@@ -8,8 +8,3 @@ body {
 *::after::before {
     box-sizing: inherit;
 }
-
-@font-face {
-    font-family: "Gobold";
-    src: url('../public/Gobold\ Regular\ Italic.otf') format('opentype');
-}
