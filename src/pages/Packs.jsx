@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './styles/Packs.css'
 import { packs } from '../../public/data.json'
+import { useNavigate } from 'react-router-dom'
 
 const Packs = ({ packsSectionRef }) => {
 
@@ -9,6 +10,12 @@ const Packs = ({ packsSectionRef }) => {
     useEffect(() => {
         setPack(packs)
     }, [])
+
+    const navigate = useNavigate()
+
+    const handleCard = (cardId) => {
+        navigate(`/buffet/${cardId}`)
+    }
 
     return (
         <section className='packs-section' ref={packsSectionRef}>
@@ -25,7 +32,7 @@ const Packs = ({ packsSectionRef }) => {
                     pack.map(pack => (
 
                         <div className='card' key={pack.id}>
-                            <div className='card-container'>
+                            <div className='card-container' onClick={() => handleCard(pack.id)}>
                                 <img className='imgCard' src={pack.image} alt="" />
                             </div>
                             <div className='info-container'>

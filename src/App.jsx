@@ -3,6 +3,7 @@ import './App.css'
 import Home from './pages/Home'
 import { useEffect, useState } from 'react'
 import Loader from './components/Loader'
+import Buffet from './pages/Buffet'
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 2300)
+    }, 2500)
   }, [])
 
 
@@ -21,6 +22,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={loading ? (<Loader />) : (<Home />)} />
+        <Route path='/buffet/:id' element={(<Buffet />)} />
       </Routes>
 
     </section>

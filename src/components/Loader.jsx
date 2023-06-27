@@ -1,5 +1,5 @@
 import React from 'react'
-import logo2 from '../assets/LOGO_BN.png'
+import logo2 from '../assets/LOGO_BN-min.png'
 import './styles/Loader.css'
 
 

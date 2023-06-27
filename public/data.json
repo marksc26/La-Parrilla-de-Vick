@@ -3,17 +3,325 @@
         {
             "id": 1,
             "title": "Buffet Select",
-            "image": "./images/packimg1.jpg"
+            "image": "./images/packimg1.jpg",
+            "backdrop": "./images/backdrop-select.jpg",
+            "includes": [
+                {
+                    "id": 1,
+                    "name": "2 cortes"
+                },
+                {
+                    "id": 2,
+                    "name": "2 complementos"
+                },
+                {
+                    "id": 3,
+                    "name": "2 vegetales"
+                },
+                {
+                    "id": 4,
+                    "name": "Ensalada fresca"
+                },
+                {
+                    "id": 5,
+                    "name": "Salsa chimichurri"
+                },
+                {
+                    "id": 6,
+                    "name": "Salsa tomate"
+                },
+                {
+                    "id": 7,
+                    "name": "Salsa tatemada picante"
+                }
+            ],
+            "cuts": [
+                {
+                    "id": 1,
+                    "name": "VACÍO"
+                },
+                {
+                    "id": 2,
+                    "name": "TOP SIRLOIN"
+                },
+                {
+                    "id": 3,
+                    "name": "CABRERÍA"
+                },
+                {
+                    "id": 4,
+                    "name": "COSTILLA BANDERA"
+                },
+                {
+                    "id": 5,
+                    "name": "ARRACHERA"
+                }
+            ],
+            "accompaniments": [
+                {
+                    "id": 1,
+                    "name": "CHISTORRA ESPAÑOLA"
+                },
+                {
+                    "id": 2,
+                    "name": "PANELA GRILL A LAS FINAS HIERBAS"
+                },
+                {
+                    "id": 3,
+                    "name": "TUETANOS"
+                },
+                {
+                    "id": 4,
+                    "name": "CHINCHULINES"
+                },
+                {
+                    "id": 5,
+                    "name": "CHORIZO ARGENTINO"
+                }
+            ],
+            "vegetables": [
+                {
+                    "id": 1,
+                    "name": "PIMIENTOS CON QUESO Y CHAMPIÑONES"
+                },
+                {
+                    "id": 2,
+                    "name": "CALABACITAS"
+                },
+                {
+                    "id": 3,
+                    "name": "BRÓCOLI"
+                },
+                {
+                    "id": 4,
+                    "name": "BETABEL"
+                },
+                {
+                    "id": 5,
+                    "name": "ZANAHORIAS"
+                },
+                {
+                    "id": 1,
+                    "name": "PIÑA"
+                }
+            ],
+            "price": "290"
         },
         {
             "id": 2,
             "title": "Buffet Prime",
-            "image": "./images/packimg2.jpg"
+            "image": "./images/packimg2.jpg",
+            "backdrop": "./images/packimg2.jpg",
+            "includes": [
+                {
+                    "id": 1,
+                    "name": "2 cortes"
+                },
+                {
+                    "id": 2,
+                    "name": "2 complementos"
+                },
+                {
+                    "id": 3,
+                    "name": "2 vegetales"
+                },
+                {
+                    "id": 4,
+                    "name": "Ensalada fresca"
+                },
+                {
+                    "id": 5,
+                    "name": "Salsa chimichurri"
+                },
+                {
+                    "id": 6,
+                    "name": "Salsa de aguacate"
+                },
+                {
+                    "id": 7,
+                    "name": "Salsa tatemada chile chiltepín"
+                }
+            ],
+            "cuts": [
+                {
+                    "id": 1,
+                    "name": "RIB EYE"
+                },
+                {
+                    "id": 2,
+                    "name": "VACÍO"
+                },
+                {
+                    "id": 3,
+                    "name": "COWBOY"
+                },
+                {
+                    "id": 4,
+                    "name": "COSTILLA BANDERA"
+                },
+                {
+                    "id": 5,
+                    "name": "PICAÑA"
+                },
+                {
+                    "id": 6,
+                    "name": "SHOTRIB"
+                },
+                {
+                    "id": 7,
+                    "name": "PORTERHOUSE"
+                },
+                {
+                    "id": 8,
+                    "name": "AGUJA NORTEÑA"
+                }
+            ],
+            "accompaniments": [
+                {
+                    "id": 1,
+                    "name": "CHORIZO ARGENTINO"
+                },
+                {
+                    "id": 2,
+                    "name": "PANELA GRILL A LAS FINAS HIERBAS"
+                },
+                {
+                    "id": 3,
+                    "name": "CHISTORRA ESPAÑOLA"
+                },
+                {
+                    "id": 4,
+                    "name": "MOLLEJAS"
+                },
+                {
+                    "id": 5,
+                    "name": "CHISTORRA ÁRABE"
+                },
+                {
+                    "id": 6,
+                    "name": "TUETANOS"
+                },
+                {
+                    "id": 7,
+                    "name": "CHINCHULINES"
+                }
+            ],
+            "vegetables": [
+                {
+                    "id": 1,
+                    "name": "PIMIENTOS CON QUESO Y CHAMPIÑONES"
+                },
+                {
+                    "id": 2,
+                    "name": "ESPARRAGOS GRILL"
+                },
+                {
+                    "id": 3,
+                    "name": "MANZANA VERDE AL VINO BLANCO"
+                },
+                {
+                    "id": 4,
+                    "name": "CALABACITAS"
+                },
+                {
+                    "id": 5,
+                    "name": "BRÓCOLI"
+                },
+                {
+                    "id": 6,
+                    "name": "ELOTITOS AMARILLOS"
+                },
+                {
+                    "id": 7,
+                    "name": "ZANAHORIAS"
+                },
+                {
+                    "id": 8,
+                    "name": "PIÑA"
+                }
+            ],
+            "price": "390"
         },
         {
             "id": 3,
             "title": "Buffet Mar y Tierra",
-            "image": "./images/packimg3.jpg"
+            "image": "./images/packimg3.jpg",
+            "backdrop": "./images/backdrop-sea.jpg",
+            "includes": [
+                {
+                    "id": 1,
+                    "name": "Pulpo sarandeado"
+                },
+                {
+                    "id": 2,
+                    "name": "2 complementos"
+                },
+                {
+                    "id": 3,
+                    "name": "2 vegetales"
+                },
+                {
+                    "id": 4,
+                    "name": "Vacío"
+                },
+                {
+                    "id": 5,
+                    "name": "Picaña"
+                },
+                {
+                    "id": 6,
+                    "name": "Camarón sarandeado en brochetas"
+                }
+            ],
+            "accompaniments": [
+                {
+                    "id": 1,
+                    "name": "CHORIZO ARGENTINO"
+                },
+                {
+                    "id": 2,
+                    "name": "TUETANOS"
+                },
+                {
+                    "id": 3,
+                    "name": "CHISTORRA ESPAÑOLA"
+                },
+                {
+                    "id": 4,
+                    "name": "CHINCHULINES"
+                },
+                {
+                    "id": 5,
+                    "name": "MOLLEJAS"
+                }
+            ],
+            "vegetables": [
+                {
+                    "id": 1,
+                    "name": "PIMIENTOS CON QUESO Y CHAMPIÑONES"
+                },
+                {
+                    "id": 2,
+                    "name": "CALABACITAS"
+                },
+                {
+                    "id": 3,
+                    "name": "BRÓCOLI"
+                },
+                {
+                    "id": 4,
+                    "name": "PIÑA"
+                },
+                {
+                    "id": 5,
+                    "name": "ELOTITOS AMARILLOS"
+                },
+                {
+                    "id": 6,
+                    "name": "ZANAHORIAS"
+                }
+            ],
+            "price": "390"
         }
     ]
 }
