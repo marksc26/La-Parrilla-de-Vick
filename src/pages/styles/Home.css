@@ -14,8 +14,8 @@
 
 .about-packs {
     background-image: url('../../assets/Images/background.jpg');
-    background-attachment: fixed;
     background-size: cover;
+    background-attachment: fixed;
 
 }
 
@@ -25,5 +25,9 @@
         background-size: cover;
         background-position: center center;
 
+    }
+
+    .about-packs {
+        background-image: url('../../assets/Images/background2.jpg');
     }
 }
