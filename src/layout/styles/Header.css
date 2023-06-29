@@ -58,6 +58,30 @@
     display: none;
 }
 
+@media(min-width: 1450px) {
+    .header {
+        height: 150px;
+
+    }
+
+    .logoContainer {
+        margin: 0 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .list-navbar li {
+        font-size: 28px;
+
+    }
+}
+
 @media(max-width: 1000px) {
     .header {
         height: 100px;
@@ -77,43 +101,52 @@
         position: fixed;
         top: 0;
         right: -100%;
-        background-color: white;
-        color: black;
-        width: 25%;
+        background-image: url(../../assets/Images/menuback.jpg);
+        color: white;
+        width: 50%;
         height: 100vh;
         z-index: 9999;
         display: flex;
         flex-direction: column;
+        align-items: center;
         transition: all 1000ms ease-in-out;
+        background-position: center;
+        background-size: cover
     }
 
     .show-menu {
         position: fixed;
         top: 0;
         right: 0;
-        background-color: white;
-        color: black;
-        width: 25%;
+        background-image: url(../../assets/Images/menuback.jpg);
+        color: white;
+        width: 50%;
         height: 100vh;
         z-index: 9999;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        background-position: center;
+        background-size: cover;
         transition: all 700ms ease-in-out;
     }
 
     .list-navbar {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        margin-top: 30px;
+        padding: 50px 20px;
+
     }
 
     .menuContainer {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 70px;
+        margin: 0 30px;
     }
 
     .bx-menu {
@@ -123,6 +156,19 @@
 
     .close-container {
         display: flex;
+        align-self: flex-end;
+        margin-right: 35px;
     }
+
+    .close-container i {
+        font-size: 30px;
+    }
+
+    .logoContainer {
+        margin: 0 30px;
+
+    }
+
+
 
 }

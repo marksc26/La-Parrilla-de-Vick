@@ -4,7 +4,7 @@ import './styles/Header.css'
 
 
 
-const Header = ({ scrollToAbout, scrollToPacks, scrollToForm }) => {
+const Header = ({ scrollToAbout, scrollToPacks, scrollToForm, }) => {
 
     const [menu, setMenu] = useState(false)
 
@@ -13,6 +13,10 @@ const Header = ({ scrollToAbout, scrollToPacks, scrollToForm }) => {
     }
 
     const handleClose = () => {
+        setMenu(!menu)
+    }
+
+    const handleOption = () => {
         setMenu(!menu)
     }
 
@@ -28,9 +32,9 @@ const Header = ({ scrollToAbout, scrollToPacks, scrollToForm }) => {
                     <i className='bx bx-x' onClick={handleClose}></i>
                 </div>
                 <ul className='list-navbar'>
-                    <li onClick={scrollToAbout}>Quienes Somos</li>
-                    <li onClick={scrollToPacks}>Paquetes</li>
-                    <li onClick={scrollToForm}>Contacto</li>
+                    <li onClick={scrollToAbout}><span onClick={handleOption}>Quienes Somos</span></li>
+                    <li onClick={scrollToPacks}><span onClick={handleOption}>Paquetes</span></li>
+                    <li onClick={scrollToForm}><span onClick={handleOption}>Contacto</span></li>
                 </ul>
 
             </div>

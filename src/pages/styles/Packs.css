@@ -1,6 +1,6 @@
 .packs-section {
     margin-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 
 .title-pack {
@@ -88,5 +88,55 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+@media(min-width: 1450px) {
+    .card {
+        width: 420px;
+
+    }
+
+    .imgCard {
+        width: 420px;
+        height: 220px;
+    }
+
+    .info-container::before {
+        top: 60%;
+        left: 0;
+        width: 130%;
+        height: 25%;
+        transform: skewY(9deg);
+        border-top-left-radius: 30%;
+    }
+
+
+    .title-pack-container {
+        font-size: 75px;
+    }
+
+}
+
+@media(max-width: 1000px) {
+    .packs-container {
+        margin: 0 20px;
+    }
+}
+
+@media(max-width: 800px) {
+    .title-pack {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .title-pack-container {
+        font-size: 45px;
+    }
+
+    .packs-section {
+        padding-bottom: 10px;
+    }
+
 
 }

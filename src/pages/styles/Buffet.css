@@ -1,7 +1,8 @@
 .section-buffet {
-    background-color: white;
+    background-color: black;
     min-height: 100%;
     position: relative;
+
 
 }
 
@@ -100,7 +101,7 @@
     top: -25%;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgb(0, 0, 0);
     width: 40%;
     height: 40%;
@@ -147,6 +148,7 @@
     padding: 3px;
     border-radius: 20px;
     cursor: pointer;
+    background-color: black;
 
 }
 
@@ -157,4 +159,148 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.img-buffet-mobile {
+    display: none;
+}
+
+.overlay {
+    display: none;
+}
+
+
+
+@media(max-width: 1355px) {
+    .title-buffet h3 {
+        font-size: 50px;
+
+    }
+
+    .requirements h2 {
+        font-size: 30px;
+
+    }
+
+    .requirements h3 {
+        font-size: 12px;
+
+    }
+
+    .includes h3 {
+        font-size: 22px;
+        margin: 12px 0;
+    }
+
+    .includes p {
+        margin: 2px 0;
+        font-size: 15px;
+    }
+
+
+}
+
+@media(max-width: 1200px) {
+    .img-buffet {
+        display: none;
+
+
+    }
+
+    .mobile-img {
+        position: relative;
+        width: 100%;
+    }
+
+    .img-buffet-mobile {
+        width: 100%;
+        display: block;
+
+    }
+
+    .overlay {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.096), rgba(0, 0, 0, 0), rgb(0, 0, 0, 1));
+        z-index: 999;
+    }
+
+    .infoCard-container {
+        position: static;
+        margin: 40px auto;
+        width: 80%;
+    }
+
+    .includes {
+        margin: 0;
+        text-align: center;
+    }
+
+    .requirements {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .container {
+        margin: 40px auto;
+        width: 400px;
+        align-items: center;
+    }
+
+    .logo-packs {
+        display: none;
+    }
+
+    .logo-packs-mobile {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo-packs-mobile img {
+        width: 220px;
+    }
+
+
+    .buttons-buffet {
+        position: static;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media(max-width: 700px) {
+    .logo-packs-mobile img {
+        width: 150px;
+    }
+
+    .requirements {
+        width: 80%;
+    }
+
+    .container {
+        width: 250px;
+    }
+
+    .title-buffet h3 {
+        font-size: 35px;
+
+    }
+
+    .title-container-info h3 {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 500px) {
+    .logo-packs-mobile img {
+        width: 120px;
+    }
 }

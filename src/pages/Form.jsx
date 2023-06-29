@@ -18,7 +18,7 @@ const Form = ({ formSectionRef }) => {
                     </div>
 
                     <div className='text-area'>
-                        <textarea name="" id="" cols="30" rows="4" placeholder='Cuentanos sobre tu evento'></textarea>
+                        <textarea name="" id="" cols="30" rows="4" placeholder='Cuentanos sobre tu evento(Fecha, domicilio, número de personas)'></textarea>
                     </div>
 
                     <div className='button'>

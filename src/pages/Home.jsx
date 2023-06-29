@@ -6,6 +6,7 @@ import Packs from './Packs'
 import Footer from '../layout/Footer'
 import ButtonWS from '../components/ButtonWS'
 import Form from './Form'
+import { useLocation } from 'react-router-dom'
 
 const Home = () => {
 
@@ -32,15 +33,35 @@ const Home = () => {
 
     const scrollToAbout = () => {
         aboutSectionRef.current.scrollIntoView({ behavior: 'smooth' })
+
     }
 
     const scrollToPacks = () => {
         packsSectionRef.current.scrollIntoView({ behavior: 'smooth' })
+
     }
 
     const scrollToForm = () => {
         formSectionRef.current.scrollIntoView({ behavior: 'smooth' })
+
     }
+
+    const packsRef = useRef(null)
+    const location = useLocation()
+
+    useEffect(() => {
+        setTimeout(() => {
+            if (location.hash === "#packs") {
+                packsRef.current.scrollIntoView({ behavior: 'smooth' })
+
+            }
+        }, 100)
+
+        if (location.hash) {
+            window.history.replaceState(null, '', location.pathname + location.search);
+        }
+
+    }, [location])
 
 
     return (
@@ -49,11 +70,16 @@ const Home = () => {
                 scrollToAbout={scrollToAbout}
                 scrollToPacks={scrollToPacks}
                 scrollToForm={scrollToForm}
+
             />
             <section className='mainImage'></section>
             <div className='about-packs'>
                 <About aboutSectionRef={aboutSectionRef} />
-                <Packs packsSectionRef={packsSectionRef} />
+                <div ref={packsRef}>
+                    <Packs packsSectionRef={packsSectionRef} />
+
+                </div>
+
             </div>
 
             <Form formSectionRef={formSectionRef} />

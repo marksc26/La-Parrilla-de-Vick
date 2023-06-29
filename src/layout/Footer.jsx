@@ -21,7 +21,6 @@ const Footer = () => {
                     </div>
                     <div className='telefono'>
                         <p>Teléfono: 33 1462 3603</p>
-                        <p>Aviso de Privacidad</p>
                     </div>
                 </div>
             </div>

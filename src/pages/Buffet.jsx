@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import './styles/Buffet.css'
 import { packs } from '../../public/data.json'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import logo from '../assets/LOGO_BN-min.png'
 
 const Buffet = () => {
 
-
-
     const [info, setinfo] = useState([{}])
+    const [showInfo, setShowInfo] = useState(true)
     const { id } = useParams()
 
     const fetchCard = (id) => {
@@ -19,118 +18,149 @@ const Buffet = () => {
         fetchCard(id)
     }, [id])
 
+    const PHONE_NUMBER = import.meta.env.VITE_PHONE_NUMBER
+    const message = `!Hola! Quiero cotizar el ${info[0].title} por favor!`
+    const encodedText = encodeURIComponent(message)
 
     console.log(info)
+
+
+    useEffect(() => {
+        setTimeout(() => {
+            setShowInfo(false)
+        }, 600)
+    }, [])
+
+
+
+
     return (
+
         <section className='section-buffet'>
-            <img className='img-buffet' src={info[0].backdrop} alt="sea" />
+            <img className='img-buffet' src={info[0].backdrop} alt="" />
+            <div className='mobile-img'>
+                <img className='img-buffet-mobile' src={info[0].backdrop_mobile} alt="" />
+                <div className='logo-packs-mobile'>
+                    <img src={logo} alt="" />
+                </div>
+                <div className='overlay'></div>
+            </div>
+
+
 
             <div className='logo-packs'>
                 <img src={logo} alt="" />
             </div>
 
-            <div className='infoCard-container'>
+            {
+                showInfo ? "" : (
+                    <div className='infoCard-container'>
 
-                <div className='title-buffet'>
-                    <div className='title-buffet-container'>
-                        <h3 >{info[0].title}</h3>
-                    </div>
-
-                </div>
-
-                <div className='requirements'>
-                    <h2><span>${info[0].price}</span> POR PERSONA</h2>
-                    <h3>SERVICIO MÍNIMO DE 30 PERSONAS</h3>
-                </div>
-
-                <div className='includes'>
-                    <h3>INCLUYE</h3>
-
-                    {
-                        info[0].includes?.map(item => (
-                            <div key={item.id}>
-                                <p>{item.name}</p>
-                            </div>
-                        ))
-                    }
-                </div>
-                {
-                    info[0].cuts && (
-                        <div className='container'>
-                            {info[0].cuts && <div className='title-container-info'><h3>CORTES</h3></div>
-                            }
-                            <div className='list-container'>
-                                {
-
-                                    info[0].cuts ? (
-                                        info[0].cuts.map(cut => (
-                                            <div>
-                                                <p key={cut.id}>{cut.name}</p>
-                                            </div>
-                                        ))
-                                    ) : ""
-
-
-                                }
+                        <div className='title-buffet'>
+                            <div className='title-buffet-container'>
+                                <h3 >{info[0].title}</h3>
                             </div>
 
                         </div>
-                    )
-                }
-                <div>
 
-                    <div className='container'>
-                        <div className='title-container-info'>
-                            <h3>COMPLEMENTOS</h3>
+                        <div className='requirements'>
+                            <h2><span>${info[0].price}</span> POR PERSONA</h2>
+                            <h3>SERVICIO MÍNIMO DE 30 PERSONAS</h3>
                         </div>
-                        <div className='list-container'>
+
+                        <div className='includes'>
+                            <h3>INCLUYE</h3>
+
                             {
-                                info[0].accompaniments && (
-                                    info[0].accompaniments.map(item => (
-                                        <div>
-                                            <p key={item.id}>{item.name}</p>
-                                        </div>
-                                    ))
-                                )
+                                info[0].includes?.map(item => (
+                                    <div key={item.id}>
+                                        <p>{item.name}</p>
+                                    </div>
+                                ))
                             }
                         </div>
+                        {
+                            info[0].cuts && (
+                                <div className='container'>
+                                    {info[0].cuts && <div className='title-container-info'><h3>CORTES</h3></div>
+                                    }
+                                    <div className='list-container'>
+                                        {
+
+                                            info[0].cuts ? (
+                                                info[0].cuts.map(cut => (
+                                                    <div key={cut.id}>
+                                                        <p >{cut.name}</p>
+                                                    </div>
+                                                ))
+                                            ) : ""
 
 
-                    </div>
-                    <div className='container'>
-                        <div className='title-container-info'>
-                            <h3>VEGETALES</h3>
+                                        }
+                                    </div>
+
+                                </div>
+                            )
+                        }
+                        <div>
+
+                            <div className='container'>
+                                <div className='title-container-info'>
+                                    <h3>COMPLEMENTOS</h3>
+                                </div>
+                                <div className='list-container'>
+                                    {
+                                        info[0].accompaniments && (
+                                            info[0].accompaniments.map(item => (
+                                                <div key={item.id}>
+                                                    <p >{item.name}</p>
+                                                </div>
+                                            ))
+                                        )
+                                    }
+                                </div>
+
+
+                            </div>
+                            <div className='container'>
+                                <div className='title-container-info'>
+                                    <h3>VEGETALES</h3>
+                                </div>
+
+                                <div className='list-container'>
+                                    {
+                                        info[0].vegetables && (
+                                            info[0].vegetables.map(item => (
+                                                <p key={item.id}>{item.name}</p>
+                                            ))
+                                        )
+                                    }
+                                </div>
+
+
+                            </div>
+
                         </div>
 
-                        <div className='list-container'>
-                            {
-                                info[0].vegetables && (
-                                    info[0].vegetables.map(item => (
-                                        <p key={item.id}>{item.name}</p>
-                                    ))
-                                )
-                            }
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-            </div>
+                    </div>)
+            }
 
 
 
             <div className='buttons-buffet'>
                 <div className='button-buffet'>
-                    <button>REGRESAR</button>
+                    <Link to={{ pathname: '/', hash: "packs" }}><button>REGRESAR</button></Link>
+
+
                 </div>
                 <div className='button-buffet'>
-                    <button>COTIZAR</button>
+                    <a href={`https://api.whatsapp.com/send?phone=${PHONE_NUMBER}&text=${encodedText}`}><button>COTIZAR</button></a>
+
                 </div>
             </div>
 
         </section>
+
     )
 }
 

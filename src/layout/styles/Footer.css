@@ -57,14 +57,25 @@
     border-radius: 20px;
 }
 
-.social-media p {
-    cursor: pointer;
-}
-
-.social-media p:hover {
-    border-bottom: 1px solid black;
-}
 
 .telefono {
     text-align: center;
+}
+
+@media(max-width: 550px) {
+
+
+    .footer-info {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footerContainer {
+        height: 320px;
+
+    }
+
+    .footer-info {
+        height: 320px;
+    }
 }

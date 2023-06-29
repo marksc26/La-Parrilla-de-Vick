@@ -18,3 +18,12 @@
     background-attachment: fixed;
     background-size: cover;
 }
+
+@media(max-width: 790px) {
+    .mainImage {
+        background-image: url('../../assets/Images/main3.jpg');
+        background-size: cover;
+        background-position: center;
+
+    }
+}

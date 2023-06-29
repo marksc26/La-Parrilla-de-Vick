@@ -1,7 +1,7 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useNavigate } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Loader from './components/Loader'
 import Buffet from './pages/Buffet'
 
@@ -15,6 +15,7 @@ function App() {
       setLoading(false)
     }, 2500)
   }, [])
+
 
 
   return (

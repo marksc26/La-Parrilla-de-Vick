@@ -5,6 +5,7 @@
             "title": "Buffet Select",
             "image": "./images/packimg1.jpg",
             "backdrop": "./images/backdrop-select.jpg",
+            "backdrop_mobile": "./images/backdrop-select-mobile.jpg",
             "includes": [
                 {
                     "id": 1,
@@ -112,6 +113,7 @@
             "title": "Buffet Prime",
             "image": "./images/packimg2.jpg",
             "backdrop": "./images/packimg2.jpg",
+            "backdrop_mobile": "./images/backdrop-prime-mobile.jpg",
             "includes": [
                 {
                     "id": 1,
@@ -246,7 +248,8 @@
             "id": 3,
             "title": "Buffet Mar y Tierra",
             "image": "./images/packimg3.jpg",
-            "backdrop": "./images/backdrop-sea.jpg",
+            "backdrop": "./images/backdrop-sea1.jpg",
+            "backdrop_mobile": "./images/backdrop-sea-mobile.jpg",
             "includes": [
                 {
                     "id": 1,
