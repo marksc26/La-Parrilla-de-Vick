@@ -103,15 +103,16 @@
         right: -100%;
         background-image: url(../../assets/Images/menuback.jpg);
         color: white;
-        width: 50%;
+        width: 65%;
         height: 100vh;
         z-index: 9999;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         transition: all 1000ms ease-in-out;
         background-position: center;
-        background-size: cover
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
     }
 
     .show-menu {
@@ -120,14 +121,10 @@
         right: 0;
         background-image: url(../../assets/Images/menuback.jpg);
         color: white;
-        width: 50%;
+        width: 65%;
         height: 100vh;
         z-index: 9999;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-position: center;
+        background-position: center center;
         background-size: cover;
         transition: all 700ms ease-in-out;
     }
@@ -140,6 +137,10 @@
         margin-top: 30px;
         padding: 50px 20px;
 
+    }
+
+    .list-navbar li {
+        font-size: 25px;
     }
 
     .menuContainer {
@@ -156,12 +157,19 @@
 
     .close-container {
         display: flex;
-        align-self: flex-end;
-        margin-right: 35px;
+        justify-content: center;
+        background-color: #f46d00;
+        width: 20%;
+        margin: 0px auto;
+        border-radius: 10px;
+        color: black;
+        padding: 3px;
+
+
     }
 
     .close-container i {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .logoContainer {

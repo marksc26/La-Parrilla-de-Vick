@@ -17,6 +17,7 @@
     background-image: url('../../assets/Images/background.jpg');
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 }
 
 @media(max-width: 790px) {
