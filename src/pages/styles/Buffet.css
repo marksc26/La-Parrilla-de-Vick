@@ -260,6 +260,7 @@
     }
 
     .logo-packs-mobile {
+        display: block;
         position: absolute;
         top: 50%;
         left: 25%;
@@ -301,6 +302,8 @@
     .title-container-info h3 {
         font-size: 15px;
     }
+
+
 }
 
 @media(max-width: 500px) {

@@ -34,7 +34,7 @@
 
 }
 
-@media(max-width: 1000px) {}
+
 
 @media(max-width: 790px) {
     .mainImage {
@@ -55,7 +55,7 @@
         position: static;
         margin: 200px auto;
         padding: 0;
-        font-size: 30px;
+        font-size: 27px;
 
     }
 }
