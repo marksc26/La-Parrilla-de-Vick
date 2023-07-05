@@ -7,6 +7,8 @@ import Footer from '../layout/Footer'
 import ButtonWS from '../components/ButtonWS'
 import Form from './Form'
 import { useLocation } from 'react-router-dom'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Home = () => {
 
@@ -63,6 +65,14 @@ const Home = () => {
 
     }, [location])
 
+    useEffect(() => {
+        AOS.init({
+            duration: 900,
+            disableMutationObserver: true,
+            offset: 150
+        })
+    }, [])
+
 
     return (
         <main>
@@ -72,7 +82,12 @@ const Home = () => {
                 scrollToForm={scrollToForm}
 
             />
-            <section className='mainImage'></section>
+            <section className='mainImage'>
+                <div className='titlePage' data-aos='fade-up'>
+                    <h3>Parrillada a domicilio</h3>
+                    <h3>de cortes finos</h3>
+                </div>
+            </section>
             <div className='about-packs'>
                 <About aboutSectionRef={aboutSectionRef} />
                 <div ref={packsRef}>
@@ -85,7 +100,7 @@ const Home = () => {
             <Form formSectionRef={formSectionRef} />
 
             {
-                scroll > 800 && (<ButtonWS />)
+                scroll > 100 && (<ButtonWS />)
             }
             <Footer />
 

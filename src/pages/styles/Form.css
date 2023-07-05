@@ -68,18 +68,26 @@
 .inputs {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 10px;
     gap: 2%;
 }
 
-.input1 {
-    width: 40%;
-    height: 40px;
-    padding: 0;
-    border: none;
-    border-bottom: 2px solid black;
-    font-size: 20px;
+.input {
+    display: flex;
+    flex-direction: column;
     font-family: 'Montserrat', sans-serif;
+}
+
+.input1 {
+    width: 250px;
+    height: 32px;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(231, 231, 231);
+
 }
 
 .input1:focus {
@@ -91,30 +99,84 @@
 .text-area {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    gap: 2%;
 }
 
-.text-area textarea {
-    width: 82%;
-    background-color: beige;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    border: none;
+
+.input2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
 
+.input2 label {
+    margin: 0;
+}
+
+.input2 input {
+    width: 250px;
+    height: 32px;
+    background-color: rgb(231, 231, 231);
+    border: none;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 
 }
 
-.text-area textarea:focus {
+
+
+.input2 input:focus {
     outline: none;
 }
+
+.persons-buffet {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 2%
+}
+
+.input3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.input3 label {
+    margin: 0;
+}
+
+.input3 input {
+    width: 250px;
+    height: 32px;
+    background-color: rgb(231, 231, 231);
+    border: none;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+
+}
+
+
+
+.input3 input:focus {
+    outline: none;
+}
+
 
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .button button {
@@ -159,7 +221,7 @@
 @media(max-width: 780px) {
     .form-container {
         width: 350px;
-        height: 75%;
+        height: 90%;
         margin: 0 auto;
         max-width: 1800px;
 
@@ -176,19 +238,57 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 15px;
+        gap: 10px;
+        margin-top: 5px;
         padding: 0 15px;
 
     }
 
     .input1 {
-        width: 90%;
-        height: 40px;
-        padding: 0;
+        width: 290px;
+        height: 30px;
+        padding: 0 5px;
         border: none;
-        border-bottom: 2px solid black;
-        font-size: 20px;
+        font-size: 17px;
         font-family: 'Montserrat', sans-serif;
+    }
+
+    .text-area {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+
+
+    }
+
+    .input2 input {
+        width: 290px;
+        font-size: 17px;
+        height: 30px;
+    }
+
+    .input2 label {
+        margin: 10px 0 0;
+    }
+
+    .persons-buffet {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .input3 input {
+        width: 290px;
+        font-size: 17px;
+        height: 30px;
+    }
+
+    .input3 label {
+        margin: 10px 0 0;
     }
 
 }

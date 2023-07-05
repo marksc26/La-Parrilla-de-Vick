@@ -13,12 +13,42 @@ const Form = ({ formSectionRef }) => {
                 </div>
                 <form action="">
                     <div className='inputs'>
-                        <input className='input1' type="text" placeholder='Nombre' />
-                        <input className='input1' type="text" placeholder='Teléfono' />
+                        <div className='input'>
+                            <label htmlFor="">Nombre</label>
+                            <input className='input1' type="text" />
+                        </div>
+
+                        <div className='input'>
+                            <label htmlFor="">Teléfono</label>
+                            <input className='input1' type="text" />
+                        </div>
+
                     </div>
 
                     <div className='text-area'>
-                        <textarea name="" id="" cols="30" rows="5" placeholder='Cuentanos sobre tu evento(Fecha, domicilio, número de personas)'></textarea>
+                        <div className='input2'>
+                            <label htmlFor="">Correo</label>
+                            <input className='correo' type="email" />
+                        </div>
+                        <div className='input2'>
+                            <label>Fecha del Evento</label>
+                            <input className='date' type="date" name="" id="" />
+                        </div>
+
+
+
+                    </div>
+
+                    <div className='persons-buffet'>
+                        <div className='input3'>
+                            <label htmlFor="">Total de personas</label>
+                            <input type="number" />
+                        </div>
+                        <div className='input3'>
+                            <label htmlFor="">Buffet</label>
+                            <input type="text" />
+
+                        </div>
                     </div>
 
                     <div className='button'>

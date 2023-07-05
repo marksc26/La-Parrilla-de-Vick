@@ -21,6 +21,7 @@ const Footer = () => {
                     </div>
                     <div className='telefono'>
                         <p>Teléfono: 33 1462 3603</p>
+                        <p>Solo Eventos en Guadalajara, Zona Metropolitana</p>
                     </div>
                 </div>
             </div>

@@ -169,6 +169,10 @@
     display: none;
 }
 
+.logo-packs-mobile {
+    display: none;
+}
+
 
 
 @media(max-width: 1355px) {

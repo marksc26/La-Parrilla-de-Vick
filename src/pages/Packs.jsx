@@ -32,11 +32,19 @@ const Packs = ({ packsSectionRef }) => {
                     pack.map(pack => (
 
                         <div className='card' key={pack.id}>
-                            <div className='card-container' onClick={() => handleCard(pack.id)}>
+                            <div className='card-container' >
                                 <img className='imgCard' src={pack.image} alt="" />
                             </div>
                             <div className='info-container'>
                                 <h3>{pack.title}</h3>
+                                <div className='buttonPack' onClick={() => handleCard(pack.id)}>
+                                    <h4>Saber más </h4>
+                                    <div className='icon'>
+                                        <i className='bx bxs-chevrons-right'></i>
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
                     ))
