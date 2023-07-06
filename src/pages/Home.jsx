@@ -21,6 +21,7 @@ const Home = () => {
     const [scroll, setScroll] = useState(0)
     const [showModal, setShowModal] = useState(false)
 
+
     useEffect(() => {
 
         function buttonws() {
@@ -70,12 +71,12 @@ const Home = () => {
 
     useEffect(() => {
         AOS.init({
-            duration: 900,
+            duration: 1100,
+            delay: 500,
             disableMutationObserver: true,
             offset: 150
         })
     }, [])
-
 
     return (
         <main>
@@ -91,6 +92,7 @@ const Home = () => {
                     <h3>Parrillada a domicilio</h3>
                     <h3>de cortes finos</h3>
                 </div>
+
             </section>
             <div className='about-packs'>
                 <About
