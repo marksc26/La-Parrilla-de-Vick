@@ -27,6 +27,16 @@
 
 .logocontainer-intro img {
     width: 220px;
+    animation: logo 3500ms ease forwards;
 
+}
 
+@keyframes logo {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

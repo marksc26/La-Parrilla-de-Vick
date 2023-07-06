@@ -1,7 +1,35 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './styles/Form.css'
+import { useForm } from 'react-hook-form'
+import emailjs from '@emailjs/browser'
 
-const Form = ({ formSectionRef }) => {
+
+
+const Form = ({ formSectionRef, setShowModal }) => {
+
+
+    const { handleSubmit, register, reset, formState: { errors } } = useForm()
+
+    const formRef = useRef()
+
+    const submitForm = () => {
+
+
+        const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY
+        const SERVICE_ID = import.meta.env.VITE_SERVICE_ID
+        const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID
+
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
+            .then(res => {
+                console.log(res.text)
+                reset()
+                setShowModal(true)
+            })
+            .catch(err => console.log(err))
+
+
+    }
+
     return (
         <section className='form-section' ref={formSectionRef}>
             <div className='form-container' >
@@ -11,16 +39,17 @@ const Form = ({ formSectionRef }) => {
                     </div>
 
                 </div>
-                <form action="">
+                <form ref={formRef} onSubmit={handleSubmit(submitForm)} action="">
                     <div className='inputs'>
                         <div className='input'>
                             <label htmlFor="">Nombre</label>
-                            <input className='input1' type="text" />
+                            <input className='input1' type="text" {...register("name", { required: true })} name='name' />
+
                         </div>
 
                         <div className='input'>
                             <label htmlFor="">Teléfono</label>
-                            <input className='input1' type="text" />
+                            <input className='input1' type="text" {...register("phone", { required: true })} name='phone' />
                         </div>
 
                     </div>
@@ -28,11 +57,11 @@ const Form = ({ formSectionRef }) => {
                     <div className='text-area'>
                         <div className='input2'>
                             <label htmlFor="">Correo</label>
-                            <input className='correo' type="email" />
+                            <input className='correo' type="email" {...register("email", { required: true })} name='email' />
                         </div>
                         <div className='input2'>
                             <label>Fecha del Evento</label>
-                            <input className='date' type="date" name="" id="" />
+                            <input className='date' type="date" name="date" id="" {...register("date", { required: true })} />
                         </div>
 
 
@@ -42,17 +71,18 @@ const Form = ({ formSectionRef }) => {
                     <div className='persons-buffet'>
                         <div className='input3'>
                             <label htmlFor="">Total de personas</label>
-                            <input type="number" />
+                            <input type="number" name='persons' {...register("persons", { required: true, min: 30 })} />
                         </div>
                         <div className='input3'>
                             <label htmlFor="">Buffet</label>
-                            <input type="text" />
+                            <input type="text" name='buffet' {...register("buffet", { required: true })} />
 
                         </div>
                     </div>
 
                     <div className='button'>
-                        <button>Solicitar cotización</button>
+                        {(errors.name || errors.email || errors.phone || errors.date || errors.persons || errors.buffet) && (<span className='errors'>Por favor, complete todos los campos</span>)}
+                        <button type='submit'>Solicitar cotización</button>
                     </div>
 
                 </form>

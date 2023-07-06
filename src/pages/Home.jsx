@@ -9,6 +9,8 @@ import Form from './Form'
 import { useLocation } from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Modal from '../components/Modal'
+import logo from '../assets/LOGO_BN-min2.png'
 
 const Home = () => {
 
@@ -17,6 +19,7 @@ const Home = () => {
     const formSectionRef = useRef(null)
 
     const [scroll, setScroll] = useState(0)
+    const [showModal, setShowModal] = useState(false)
 
     useEffect(() => {
 
@@ -84,20 +87,31 @@ const Home = () => {
             />
             <section className='mainImage'>
                 <div className='titlePage' data-aos='fade-up'>
+                    <img className='logoMain' src={logo} alt="" />
                     <h3>Parrillada a domicilio</h3>
                     <h3>de cortes finos</h3>
                 </div>
             </section>
             <div className='about-packs'>
-                <About aboutSectionRef={aboutSectionRef} />
+                <About
+                    aboutSectionRef={aboutSectionRef}
+                />
                 <div ref={packsRef}>
-                    <Packs packsSectionRef={packsSectionRef} />
+                    <Packs
+                        packsSectionRef={packsSectionRef}
+                    />
 
                 </div>
 
             </div>
 
-            <Form formSectionRef={formSectionRef} />
+            <Form
+                formSectionRef={formSectionRef}
+                setShowModal={setShowModal}
+            />
+            {
+                showModal && (<Modal setShowModal={setShowModal} />)
+            }
 
             {
                 scroll > 100 && (<ButtonWS />)

@@ -1,0 +1,60 @@
+.sectionModal {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(158, 158, 158, 0.151);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.modal-container {
+    background-color: white;
+    width: 300px;
+    height: 220px;
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.637);
+    border-radius: 20px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.438);
+}
+
+.icon-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon-modal i {
+    font-size: 70px;
+    color: green;
+}
+
+.text-modal {
+    font-family: "Gobold", sans-serif;
+    text-align: center;
+
+}
+
+.buttonModal {
+    text-align: center;
+}
+
+.buttonModal button {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.815);
+    cursor: pointer;
+}
+
+.buttonModal button:hover {
+    background-color: beige;
+}
