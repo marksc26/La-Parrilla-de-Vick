@@ -3,13 +3,13 @@
         {
             "id": 1,
             "title": "Buffet Select",
-            "image": "./images/molleja-ribeye.jpg",
+            "image": "./images/prime1.jpg",
             "backdrop": "./images/select-last.jpg",
             "backdrop_mobile": "./images/select-last.jpg",
             "includes": [
                 {
                     "id": 1,
-                    "name": "2 cortes"
+                    "name": "3 cortes"
                 },
                 {
                     "id": 2,
