@@ -89,9 +89,19 @@
         background-image: url('../../assets/Images/background2.jpg');
     }
 
+    .titlePage h3 {
+        font-size: 35px;
+    }
+
+    .titlePage p {
+        font-size: 35px;
+    }
+
     .titlePage {
         position: static;
-        padding: 0;
+        text-align: center;
+        padding: 0 10pxÑ;
+        margin: 0 auto;
         font-size: 24px;
 
     }
