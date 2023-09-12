@@ -5,7 +5,7 @@
             "title": "Buffet Select",
             "image": "./images/molleja-ribeye.jpg",
             "backdrop": "./images/select-last.jpg",
-            "backdrop_mobile": "./images/backdrop-select-mobile.jpg",
+            "backdrop_mobile": "./images/select-last.jpg",
             "includes": [
                 {
                     "id": 1,
@@ -113,7 +113,7 @@
             "title": "Buffet Prime",
             "image": "./images/ribeye.jpg",
             "backdrop": "./images/prime-last.jpg",
-            "backdrop_mobile": "./images/backdrop-prime-mobile.jpg",
+            "backdrop_mobile": "./images/prime-last.jpg",
             "includes": [
                 {
                     "id": 1,

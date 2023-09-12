@@ -106,7 +106,7 @@ const Home = () => {
                 <div className='titlePage' data-aos='fade-up'>
                     <img className='logoMain' src={logo} alt="" />
                     <h3>PARRILLADA BUFFET</h3>
-                    <h3>DE CORTES FINOS, MAR Y TIERRA</h3>
+                    <h3>CORTES FINOS, MAR Y TIERRA</h3>
                     <p>EVENTOS</p>
                     <h4>Guadalajara Jalisco y zona metropolitana</h4>
                 </div>
