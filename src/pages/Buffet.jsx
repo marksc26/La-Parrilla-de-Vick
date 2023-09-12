@@ -3,6 +3,7 @@ import './styles/Buffet.css'
 import { packs } from '../../public/data.json'
 import { Link, useParams } from 'react-router-dom'
 import logo from '../assets/LOGO_BN-min.png'
+import Footer from '../layout/Footer'
 
 const Buffet = () => {
 
@@ -14,6 +15,8 @@ const Buffet = () => {
         setinfo(packs.filter(pack => pack.id === Number(id)))
 
     }
+
+
     useEffect(() => {
         fetchCard(id)
     }, [id])
@@ -22,7 +25,7 @@ const Buffet = () => {
     const message = `!Hola! Quiero cotizar el ${info[0].title} por favor!`
     const encodedText = encodeURIComponent(message)
 
-    console.log(info)
+
 
 
     useEffect(() => {
@@ -64,64 +67,73 @@ const Buffet = () => {
                         </div>
 
                         <div className='requirements'>
-                            <h2><span>${info[0].price}</span> POR PERSONA</h2>
+                            <h2><span>${info[0].price}</span> por persona</h2>
                             <h3>SERVICIO MÍNIMO DE 30 PERSONAS</h3>
                         </div>
 
                         <div className='includes'>
                             <h3>INCLUYE</h3>
 
-                            {
-                                info[0].includes?.map(item => (
-                                    <div key={item.id}>
-                                        <p>{item.name}</p>
-                                    </div>
-                                ))
-                            }
+                            <div className='list-includes'>
+                                {
+                                    info[0].includes?.map(item => (
+                                        <div key={item.id}>
+                                            <p>{item.name}</p>
+                                        </div>
+                                    ))
+                                }
+                            </div>
+
+
                         </div>
-                        {
-                            info[0].cuts && (
+
+                        <section className='grid-container'>
+                            {
+                                info[0].cuts && (
+                                    <div className='container'>
+                                        {info[0].cuts && <div className='title-container-info'><h3>CORTES</h3></div>
+                                        }
+                                        <div className='list-container'>
+                                            {
+
+                                                info[0].cuts ? (
+                                                    info[0].cuts.map(cut => (
+                                                        <div key={cut.id}>
+                                                            <p >{cut.name}</p>
+                                                        </div>
+                                                    ))
+                                                ) : ""
+
+
+                                            }
+                                        </div>
+
+                                    </div>
+                                )
+                            }
+                            <div>
+
                                 <div className='container'>
-                                    {info[0].cuts && <div className='title-container-info'><h3>CORTES</h3></div>
-                                    }
+                                    <div className='title-container-info'>
+                                        <h3>COMPLEMENTOS</h3>
+                                    </div>
                                     <div className='list-container'>
                                         {
-
-                                            info[0].cuts ? (
-                                                info[0].cuts.map(cut => (
-                                                    <div key={cut.id}>
-                                                        <p >{cut.name}</p>
+                                            info[0].accompaniments && (
+                                                info[0].accompaniments.map(item => (
+                                                    <div key={item.id}>
+                                                        <p >{item.name}</p>
                                                     </div>
                                                 ))
-                                            ) : ""
-
-
+                                            )
                                         }
                                     </div>
 
-                                </div>
-                            )
-                        }
-                        <div>
 
-                            <div className='container'>
-                                <div className='title-container-info'>
-                                    <h3>COMPLEMENTOS</h3>
                                 </div>
-                                <div className='list-container'>
-                                    {
-                                        info[0].accompaniments && (
-                                            info[0].accompaniments.map(item => (
-                                                <div key={item.id}>
-                                                    <p >{item.name}</p>
-                                                </div>
-                                            ))
-                                        )
-                                    }
-                                </div>
-
-
                             </div>
+
+
                             <div className='container'>
                                 <div className='title-container-info'>
                                     <h3>VEGETALES</h3>
@@ -140,7 +152,7 @@ const Buffet = () => {
 
                             </div>
 
-                        </div>
+                        </section>
 
                     </div>)
             }
@@ -158,6 +170,12 @@ const Buffet = () => {
 
                 </div>
             </div>
+
+            {
+                showInfo ? "" : <Footer />
+            }
+
+
 
         </section>
 

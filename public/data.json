@@ -3,8 +3,8 @@
         {
             "id": 1,
             "title": "Buffet Select",
-            "image": "./images/packimg1.jpg",
-            "backdrop": "./images/backdrop-select.jpg",
+            "image": "./images/molleja-ribeye.jpg",
+            "backdrop": "./images/select-last.jpg",
             "backdrop_mobile": "./images/backdrop-select-mobile.jpg",
             "includes": [
                 {
@@ -17,7 +17,7 @@
                 },
                 {
                     "id": 3,
-                    "name": "2 vegetales"
+                    "name": "3 vegetales"
                 },
                 {
                     "id": 4,
@@ -106,13 +106,13 @@
                     "name": "PIÑA"
                 }
             ],
-            "price": "290"
+            "price": "320"
         },
         {
             "id": 2,
             "title": "Buffet Prime",
-            "image": "./images/packimg2.jpg",
-            "backdrop": "./images/packimg2.jpg",
+            "image": "./images/ribeye.jpg",
+            "backdrop": "./images/prime-last.jpg",
             "backdrop_mobile": "./images/backdrop-prime-mobile.jpg",
             "includes": [
                 {
@@ -125,7 +125,7 @@
                 },
                 {
                     "id": 3,
-                    "name": "2 vegetales"
+                    "name": "3 vegetales"
                 },
                 {
                     "id": 4,
@@ -261,7 +261,7 @@
                 },
                 {
                     "id": 3,
-                    "name": "2 vegetales"
+                    "name": "3 vegetales"
                 },
                 {
                     "id": 4,
@@ -288,10 +288,6 @@
                 {
                     "id": 9,
                     "name": "CHISTORRA ESPAÑOLA"
-                },
-                {
-                    "id": 10,
-                    "name": "CHINCHULINES"
                 },
                 {
                     "id": 11,

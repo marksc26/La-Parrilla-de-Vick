@@ -58,6 +58,12 @@
     display: none;
 }
 
+.navbar-icons {
+    display: none;
+}
+
+
+
 @media(min-width: 1450px) {
     .header {
         height: 150px;
@@ -175,6 +181,17 @@
     .logoContainer {
         margin: 0 30px;
 
+    }
+
+    .navbar-icons {
+        margin-top: 30px;
+        display: flex;
+        gap: 30px;
+    }
+
+    .navbar-icons i {
+        font-size: 45px;
+        color: white;
     }
 
 

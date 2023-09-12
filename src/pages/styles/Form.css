@@ -165,9 +165,26 @@
 
 }
 
+.input3 select {
+    width: 265px;
+    height: 32px;
+    background-color: rgb(231, 231, 231);
+    border: none;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+
+}
+
+
 
 
 .input3 input:focus {
+    outline: none;
+}
+
+.input3 select:focus {
     outline: none;
 }
 
@@ -316,6 +333,10 @@
 
     .input3 label {
         margin: 10px 0 0;
+    }
+
+    .input3 select {
+        width: 300px;
     }
 
 }

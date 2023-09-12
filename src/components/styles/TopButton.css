@@ -1,0 +1,19 @@
+.topbutton {
+    position: fixed;
+    bottom: 85px;
+    right: 25px;
+}
+
+.button-container {
+    background-color: black;
+    border: 2px solid #f46d00;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+
+}
+
+.button-container i {
+    font-size: 40px;
+    color: #f46d00;
+}

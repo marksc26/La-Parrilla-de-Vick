@@ -57,6 +57,9 @@
     border-radius: 20px;
 }
 
+.icons a {
+    color: white;
+}
 
 .telefono {
     text-align: center;

@@ -4,20 +4,23 @@ import './styles/Header.css'
 
 
 
-const Header = ({ scrollToAbout, scrollToPacks, scrollToForm, }) => {
+const Header = ({ scrollToAbout, scrollToPacks, scrollToForm }) => {
 
     const [menu, setMenu] = useState(false)
 
     const handleMenu = () => {
         setMenu(!menu)
+
     }
 
     const handleClose = () => {
         setMenu(!menu)
+
     }
 
     const handleOption = () => {
-        setMenu(!menu)
+        setMenu(false)
+
     }
 
     return (
@@ -35,6 +38,10 @@ const Header = ({ scrollToAbout, scrollToPacks, scrollToForm, }) => {
                     <li onClick={scrollToAbout}><span onClick={handleOption}>Quienes Somos</span></li>
                     <li onClick={scrollToPacks}><span onClick={handleOption}>Paquetes</span></li>
                     <li onClick={scrollToForm}><span onClick={handleOption}>Contacto</span></li>
+                    <div className='navbar-icons'>
+                        <a target='_blank' href="https://www.facebook.com/LaparrilladeVick?mibextid=ZbWKwL"><i className='bx bxl-facebook-circle'></i></a>
+                        <a target='_blank' href="https://www.instagram.com/laparrilladevick/?igshid=MzRlODBiNWFlZA%3D%3D"><i className='bx bxl-instagram'></i></a>
+                    </div>
                 </ul>
 
             </div>

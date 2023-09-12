@@ -10,16 +10,20 @@ import { useLocation } from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Modal from '../components/Modal'
-import logo from '../assets/LOGO_BN-min2.png'
+import logo from '../assets/LOGO_BN-min.png'
+
 
 const Home = () => {
 
     const aboutSectionRef = useRef(null)
     const packsSectionRef = useRef(null)
     const formSectionRef = useRef(null)
+    const homeSectionRef = useRef(null)
 
     const [scroll, setScroll] = useState(0)
     const [showModal, setShowModal] = useState(false)
+    const [showMenu, setShowMenu] = useState(false)
+
 
 
     useEffect(() => {
@@ -37,6 +41,11 @@ const Home = () => {
 
     }, [])
 
+
+
+
+
+
     const scrollToAbout = () => {
         aboutSectionRef.current.scrollIntoView({ behavior: 'smooth' })
 
@@ -51,6 +60,11 @@ const Home = () => {
         formSectionRef.current.scrollIntoView({ behavior: 'smooth' })
 
     }
+
+    const scrollToTop = () => {
+        homeSectionRef.current.scrollIntoView({ behavior: 'smooth' })
+    }
+
 
     const packsRef = useRef(null)
     const location = useLocation()
@@ -79,18 +93,22 @@ const Home = () => {
     }, [])
 
     return (
-        <main>
+        <main className={!showMenu ? "" : "hidden"}>
             <Header
                 scrollToAbout={scrollToAbout}
                 scrollToPacks={scrollToPacks}
                 scrollToForm={scrollToForm}
+                setShowMenu={setShowMenu}
+                showMenu={showMenu}
 
             />
-            <section className='mainImage'>
+            <section className="mainImage" ref={homeSectionRef}>
                 <div className='titlePage' data-aos='fade-up'>
                     <img className='logoMain' src={logo} alt="" />
-                    <h3>Parrillada a domicilio</h3>
-                    <h3>de cortes finos</h3>
+                    <h3>PARRILLADA BUFFET</h3>
+                    <h3>DE CORTES FINOS, MAR Y TIERRA</h3>
+                    <p>EVENTOS</p>
+                    <h4>Guadalajara Jalisco y zona metropolitana</h4>
                 </div>
 
             </section>
@@ -116,8 +134,10 @@ const Home = () => {
             }
 
             {
-                scroll > 100 && (<ButtonWS />)
+                scroll > 150 && (<ButtonWS scrollToTop={scrollToTop} />)
             }
+
+
             <Footer />
 
         </main>

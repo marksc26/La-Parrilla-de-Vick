@@ -6,6 +6,14 @@ import img3 from '../assets/Images/img3.jpg'
 import img4 from '../assets/Images/img4.jpg'
 import img5 from '../assets/Images/img5.jpg'
 import img6 from '../assets/Images/img6.jpg'
+import img7 from '../assets/Images/piñarellena.jpg'
+import img8 from '../assets/Images/prime5.jpg'
+
+import img10 from '../assets/Images/ribeye.jpg'
+import img11 from '../assets/Images/pulpo2.jpg'
+import img12 from '../assets/Images/filete.jpg'
+import img13 from '../assets/Images/vacio4.jpg'
+import img14 from '../assets/Images/cowboy2.jpg'
 
 
 
@@ -32,27 +40,30 @@ const About = ({ aboutSectionRef }) => {
 
 
                     <div className='item8'>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus voluptate hic, nesciunt sed sit animi sunt, doloremque ratione alias, facere assumenda quaerat. Harum, dolores atque earum similique est omnis sit</p>
+                        <p>Somos una empresa familiar con marca registrada que nos encanta el asado, ponemos en la parrilla todo nuestro conocimiento, pasión, creatividad y amor.
+                            Nuestras parrilladas de cortes finos, mar y tierra, y nuestros exquisitos complementos son un éxito y satisfacción para nuestros clientes.
+                            Todos nuestros productos son de alta calidad, sabor, frescura e innovación con la mejor atención personalizada.
+                        </p>
                     </div>
 
 
                     <div className='item1'>
-                        <img src={img1} alt="" />
+                        <img src={img12} alt="" />
                     </div>
                     <div className='item2'>
-                        <img src={img2} alt="" />
+                        <img src={img7} alt="" />
                     </div>
                     <div className='item3'>
-                        <img src={img3} alt="" />
+                        <img src={img13} alt="" />
                     </div>
                     <div className='item4'>
-                        <img src={img4} alt="" />
+                        <img src={img11} alt="" />
                     </div>
                     <div className='item5'>
-                        <img src={img5} alt="" />
+                        <img src={img8} alt="" />
                     </div>
                     <div className='item6'>
-                        <img src={img6} alt="" />
+                        <img src={img14} alt="" />
                     </div>
 
 

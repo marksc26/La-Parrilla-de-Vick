@@ -71,17 +71,22 @@ const Form = ({ formSectionRef, setShowModal }) => {
                     <div className='persons-buffet'>
                         <div className='input3'>
                             <label htmlFor="">Total de personas</label>
-                            <input type="number" name='persons' {...register("persons", { required: true, min: 30 })} />
+                            <input type="text" name='persons' {...register("persons", { required: true, min: 30 })} />
                         </div>
                         <div className='input3'>
                             <label htmlFor="">Buffet</label>
-                            <input type="text" name='buffet' {...register("buffet", { required: true })} />
+                            <select name="buffet" id="" {...register("buffet", { required: true })}>
+                                <option value="Select">Select</option>
+                                <option value="Prime">Prime</option>
+                                <option value="Mar y tierra">Mar y tierra</option>
+                            </select>
 
                         </div>
                     </div>
 
                     <div className='button'>
-                        {(errors.name || errors.email || errors.phone || errors.date || errors.persons || errors.buffet) && (<span className='errors'>Por favor, complete todos los campos</span>)}
+                        {(errors.name || errors.email || errors.phone || errors.date || errors.persons || errors.buffet)
+                            && (<span className='errors'>Por favor, complete todos los campos</span>)}
                         <button type='submit'>Solicitar cotización</button>
                     </div>
 

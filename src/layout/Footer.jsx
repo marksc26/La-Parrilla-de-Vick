@@ -15,9 +15,9 @@ const Footer = () => {
                 <div className='social-media'>
                     <h3>Síguenos en</h3>
                     <div className='icons'>
-                        <i className='bx bxl-facebook-circle'></i>
-                        <i className='bx bxl-instagram'></i>
-                        <i className='bx bxl-tiktok'></i>
+                        <a target='_blank' href="https://www.facebook.com/LaparrilladeVick?mibextid=ZbWKwL"><i className='bx bxl-facebook-circle'></i></a>
+                        <a target='_blank' href="https://www.instagram.com/laparrilladevick/?igshid=MzRlODBiNWFlZA%3D%3D"><i className='bx bxl-instagram'></i></a>
+
                     </div>
                     <div className='telefono'>
                         <p>Teléfono: 33 1462 3603</p>
