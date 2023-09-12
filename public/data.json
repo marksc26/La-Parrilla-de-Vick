@@ -257,23 +257,23 @@
                 },
                 {
                     "id": 2,
-                    "name": "2 complementos"
+                    "name": "Camarón en brochetas"
                 },
                 {
                     "id": 3,
-                    "name": "3 vegetales"
-                },
-                {
-                    "id": 4,
                     "name": "Vacío"
                 },
                 {
-                    "id": 5,
+                    "id": 4,
                     "name": "Picaña"
                 },
                 {
-                    "id": 6,
-                    "name": "Camarón sarandeado en brochetas"
+                    "id": 5,
+                    "name": "2 complementos"
+                },
+                {
+                    "id": 5,
+                    "name": "3 vegetales"
                 }
             ],
             "accompaniments": [
