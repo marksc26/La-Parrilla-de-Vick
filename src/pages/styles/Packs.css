@@ -1,6 +1,10 @@
 .packs-section {
     margin-top: 50px;
     padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title-pack {
@@ -26,9 +30,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     gap: 35px;
-    margin: 90px auto 0;
+    margin: 20px auto 0;
     max-width: 1800px;
 
 
@@ -109,7 +113,6 @@
 .buttonPack h4 {
     font-size: 17px;
     color: white;
-
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 
@@ -131,6 +134,17 @@
     color: black;
     cursor: pointer;
     font-size: 23px;
+
+}
+
+.discounts {
+    background-color: black;
+    color: #f46d00;
+    font-family: 'Montserrat', sans-serif;
+    width: 320px;
+    border-radius: 10px;
+    padding: 0 20px;
+    text-align: center;
 
 }
 

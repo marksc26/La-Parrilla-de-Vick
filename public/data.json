@@ -111,7 +111,7 @@
         {
             "id": 2,
             "title": "Buffet Prime",
-            "image": "./images/ribeye.jpg",
+            "image": "./images/ribeye-prime.jpg",
             "backdrop": "./images/prime-last.jpg",
             "backdrop_mobile": "./images/prime-last.jpg",
             "includes": [

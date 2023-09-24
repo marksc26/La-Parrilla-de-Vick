@@ -57,7 +57,13 @@ const Form = ({ formSectionRef, setShowModal }) => {
                     <div className='text-area'>
                         <div className='input2'>
                             <label htmlFor="">Correo</label>
-                            <input className='correo' type="email" {...register("email", { required: true })} name='email' />
+                            <input
+                                className='correo'
+                                type="email"
+                                {...register("email", {
+                                    required: true
+                                })}
+                                name='email' />
                         </div>
                         <div className='input2'>
                             <label>Fecha del Evento</label>

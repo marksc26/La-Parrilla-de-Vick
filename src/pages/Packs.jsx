@@ -42,13 +42,17 @@ const Packs = ({ packsSectionRef }) => {
                                     <div className='icon'>
                                         <i className='bx bxs-chevrons-right'></i>
                                     </div>
-
                                 </div>
 
                             </div>
                         </div>
                     ))
                 }
+            </div>
+
+            <div className='discounts'>
+                <p>Eventos mayores a 80 personas, se aplica un 10% de descuento y mayores a 120 personas, se aplica un 15% de descuento.</p>
+
             </div>
 
         </section>
