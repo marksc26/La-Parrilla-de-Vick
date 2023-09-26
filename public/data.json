@@ -253,15 +253,15 @@
             "includes": [
                 {
                     "id": 1,
-                    "name": "Pulpo sarandeado"
+                    "name": "Pulpo zarandeado"
                 },
                 {
                     "id": 2,
-                    "name": "Camarón en brochetas"
+                    "name": "Vacío"
                 },
                 {
                     "id": 3,
-                    "name": "Vacío"
+                    "name": "Yakitori de Camarón(brochetas)"
                 },
                 {
                     "id": 4,
@@ -269,29 +269,11 @@
                 },
                 {
                     "id": 5,
-                    "name": "2 complementos"
+                    "name": "Chistorra española"
                 },
                 {
                     "id": 5,
-                    "name": "3 vegetales"
-                }
-            ],
-            "accompaniments": [
-                {
-                    "id": 7,
-                    "name": "CHORIZO ARGENTINO"
-                },
-                {
-                    "id": 8,
-                    "name": "TUETANOS"
-                },
-                {
-                    "id": 9,
-                    "name": "CHISTORRA ESPAÑOLA"
-                },
-                {
-                    "id": 11,
-                    "name": "MOLLEJAS"
+                    "name": "3 Vegetales grill a elegir"
                 }
             ],
             "vegetables": [
@@ -318,6 +300,10 @@
                 {
                     "id": 17,
                     "name": "ZANAHORIAS"
+                },
+                {
+                    "id": 18,
+                    "name": "BETABEL"
                 }
             ],
             "price": "390"

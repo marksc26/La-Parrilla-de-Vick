@@ -112,27 +112,30 @@ const Buffet = () => {
                                     </div>
                                 )
                             }
-                            <div>
+                            {
+                                info[0].accompaniments && (
+                                    <div className='container'>
+                                        <div className='title-container-info'>
+                                            <h3>COMPLEMENTOS</h3>
+                                        </div>
+                                        <div className='list-container'>
+                                            {
+                                                info[0].accompaniments && (
+                                                    info[0].accompaniments.map(item => (
+                                                        <div key={item.id}>
+                                                            <p >{item.name}</p>
+                                                        </div>
+                                                    ))
+                                                )
+                                            }
+                                        </div>
 
-                                <div className='container'>
-                                    <div className='title-container-info'>
-                                        <h3>COMPLEMENTOS</h3>
+
                                     </div>
-                                    <div className='list-container'>
-                                        {
-                                            info[0].accompaniments && (
-                                                info[0].accompaniments.map(item => (
-                                                    <div key={item.id}>
-                                                        <p >{item.name}</p>
-                                                    </div>
-                                                ))
-                                            )
-                                        }
-                                    </div>
+                                )
+                            }
 
 
-                                </div>
-                            </div>
 
 
                             <div className='container'>
