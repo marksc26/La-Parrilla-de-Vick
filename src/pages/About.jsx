@@ -39,7 +39,7 @@ const About = ({ aboutSectionRef }) => {
 
 
                     <div className='item8'>
-                        <p>Somos una empresa familiar con marca registrada que nos encanta el asado, ponemos en la parrilla todo nuestro conocimiento, pasión, creatividad y amor.
+                        <p>Somos un grupo familiar con marca registrada que nos encanta el asado, ponemos en la parrilla todo nuestro conocimiento, pasión, creatividad y amor.
                             Nuestras parrilladas de cortes finos, mar y tierra, y nuestros exquisitos complementos son un éxito y satisfacción para nuestros clientes.
                             Todos nuestros productos son de alta calidad, sabor, frescura e innovación con la mejor atención personalizada.
                         </p>
