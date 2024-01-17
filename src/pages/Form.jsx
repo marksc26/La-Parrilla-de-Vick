@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser'
 
 
 
-const Form = ({ formSectionRef, setShowModal }) => {
+const Form = ({ setShowModal }) => {
 
 
     const { handleSubmit, register, reset, formState: { errors } } = useForm()
@@ -31,7 +31,7 @@ const Form = ({ formSectionRef, setShowModal }) => {
     }
 
     return (
-        <section className='form-section' ref={formSectionRef}>
+        <section className='form-section'>
             <div className='form-container' >
                 <div className='title-container'>
                     <div className='title-form'>

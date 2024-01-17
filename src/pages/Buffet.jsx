@@ -166,12 +166,9 @@ const Buffet = () => {
             <div className='buttons-buffet'>
                 <div className='button-buffet'>
                     <Link to={{ pathname: '/', hash: "packs" }}><button>REGRESAR</button></Link>
-
-
                 </div>
                 <div className='button-buffet'>
                     <a href={`https://api.whatsapp.com/send?phone=${PHONE_NUMBER}&text=${encodedText}`}><button>COTIZAR</button></a>
-
                 </div>
             </div>
 

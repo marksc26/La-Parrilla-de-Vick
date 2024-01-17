@@ -54,6 +54,19 @@
     color: #f46d00;
 }
 
+.link {
+    text-decoration: none;
+    color: white;
+
+    cursor: pointer;
+    font-family: "Gobold", sans-serif;
+    transition: all 600ms ease;
+}
+
+.link:hover {
+    color: #f46d00;
+}
+
 .close-container {
     display: none;
 }

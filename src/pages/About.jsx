@@ -1,11 +1,5 @@
 import React from 'react'
 import './styles/About.css'
-import img1 from '../assets/Images/img1.jpg'
-import img2 from '../assets/Images/img2.jpg'
-import img3 from '../assets/Images/img3.jpg'
-import img4 from '../assets/Images/img4.jpg'
-import img5 from '../assets/Images/img5.jpg'
-import img6 from '../assets/Images/img6.jpg'
 import img7 from '../assets/Images/myt3.jpg'
 import img8 from '../assets/Images/prime5.jpg'
 import img10 from '../assets/Images/ribeye.jpg'
@@ -17,9 +11,9 @@ import img14 from '../assets/Images/cowboy2.jpg'
 
 
 
-const About = ({ aboutSectionRef }) => {
+const About = () => {
     return (
-        <section className='aboutSection' ref={aboutSectionRef}>
+        <section className='aboutSection'>
 
             <div className='aboutContainer' >
 
@@ -38,7 +32,7 @@ const About = ({ aboutSectionRef }) => {
                     </div>
 
 
-                    <div className='item8'>
+                    <div className='texto'>
                         <p>Somos un grupo familiar con marca registrada que nos encanta el asado, ponemos en la parrilla todo nuestro conocimiento, pasión, creatividad y amor.
                             Nuestras parrilladas de cortes finos, mar y tierra, y nuestros exquisitos complementos son un éxito y satisfacción para nuestros clientes.
                             Todos nuestros productos son de alta calidad, sabor, frescura e innovación con la mejor atención personalizada.

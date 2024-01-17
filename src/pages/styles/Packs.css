@@ -152,21 +152,21 @@
 
 @media(min-width: 1450px) {
     .card {
-        width: 420px;
+        width: 330px;
 
     }
 
     .imgCard {
-        width: 420px;
+        width: 330px;
         height: 220px;
     }
 
     .info-container::before {
-        top: 60%;
+        top: 64%;
         left: 0;
         width: 130%;
-        height: 25%;
-        transform: skewY(9deg);
+        height: 20%;
+        transform: skewY(8deg);
         border-top-left-radius: 30%;
     }
 

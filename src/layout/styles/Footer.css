@@ -43,18 +43,20 @@
 }
 
 .social-media i {
-    font-size: 32px;
+    font-size: 35px;
     cursor: pointer;
 }
 
 .icons {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     background-image: url('../../assets/Images/background.jpg');
     background-size: contain;
-    padding: 5px;
+    padding: 5px 10px;
     color: white;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .icons a {
@@ -63,7 +65,10 @@
 
 .telefono {
     text-align: center;
+
 }
+
+
 
 @media(max-width: 550px) {
 

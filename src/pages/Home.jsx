@@ -15,9 +15,6 @@ import logo from '../assets/LOGO_BN-min.png'
 
 const Home = () => {
 
-    const aboutSectionRef = useRef(null)
-    const packsSectionRef = useRef(null)
-    const formSectionRef = useRef(null)
     const homeSectionRef = useRef(null)
 
     const [scroll, setScroll] = useState(0)
@@ -41,32 +38,14 @@ const Home = () => {
 
     }, [])
 
-
-
-
-
-
-    const scrollToAbout = () => {
-        aboutSectionRef.current.scrollIntoView({ behavior: 'smooth' })
-
-    }
-
-    const scrollToPacks = () => {
-        packsSectionRef.current.scrollIntoView({ behavior: 'smooth' })
-
-    }
-
-    const scrollToForm = () => {
-        formSectionRef.current.scrollIntoView({ behavior: 'smooth' })
-
-    }
-
     const scrollToTop = () => {
         homeSectionRef.current.scrollIntoView({ behavior: 'smooth' })
     }
 
 
     const packsRef = useRef(null)
+    const contactRef = useRef(null)
+    const aboutRef = useRef(null)
     const location = useLocation()
 
     useEffect(() => {
@@ -75,13 +54,24 @@ const Home = () => {
                 packsRef.current.scrollIntoView({ behavior: 'smooth' })
 
             }
+            if (location.hash === "#contact") {
+                contactRef.current.scrollIntoView({ behavior: 'smooth' })
+            }
+            if (location.hash === "#about") {
+                aboutRef.current.scrollIntoView({ behavior: "smooth" })
+            }
         }, 100)
 
         if (location.hash) {
             window.history.replaceState(null, '', location.pathname + location.search);
         }
 
+
+
+
     }, [location])
+
+
 
     useEffect(() => {
         AOS.init({
@@ -95,9 +85,6 @@ const Home = () => {
     return (
         <main className={!showMenu ? "" : "hidden"}>
             <Header
-                scrollToAbout={scrollToAbout}
-                scrollToPacks={scrollToPacks}
-                scrollToForm={scrollToForm}
                 setShowMenu={setShowMenu}
                 showMenu={showMenu}
 
@@ -113,22 +100,22 @@ const Home = () => {
 
             </section>
             <div className='about-packs'>
-                <About
-                    aboutSectionRef={aboutSectionRef}
-                />
-                <div ref={packsRef}>
-                    <Packs
-                        packsSectionRef={packsSectionRef}
-                    />
+                <div ref={aboutRef}>
+                    <About />
+                </div>
 
+                <div ref={packsRef}>
+                    <Packs />
                 </div>
 
             </div>
+            <div ref={contactRef}>
+                <Form
+                    setShowModal={setShowModal}
+                />
+            </div>
 
-            <Form
-                formSectionRef={formSectionRef}
-                setShowModal={setShowModal}
-            />
+
             {
                 showModal && (<Modal setShowModal={setShowModal} />)
             }

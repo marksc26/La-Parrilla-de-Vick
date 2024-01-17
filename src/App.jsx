@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import { useEffect, useState } from 'react'
 import Loader from './components/Loader'
 import Buffet from './pages/Buffet'
+import Galeria from './pages/Galeria'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Routes>
         <Route path='/' element={loading ? (<Loader />) : (<Home />)} />
         <Route path='/buffet/:id' element={(<Buffet />)} />
+        <Route path='/galeria' element={(<Galeria />)} />
       </Routes>
 
     </section>

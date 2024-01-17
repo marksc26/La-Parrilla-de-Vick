@@ -3,7 +3,7 @@ import './styles/Packs.css'
 import { packs } from '../../public/data.json'
 import { useNavigate } from 'react-router-dom'
 
-const Packs = ({ packsSectionRef }) => {
+const Packs = () => {
 
     const [pack, setPack] = useState([])
 
@@ -18,7 +18,7 @@ const Packs = ({ packsSectionRef }) => {
     }
 
     return (
-        <section className='packs-section' ref={packsSectionRef}>
+        <section className='packs-section'>
 
             <div className='title-pack' >
                 <div className='title-pack-container'>

@@ -1,0 +1,170 @@
+.galeria-section {
+    background: url('../../assets/Images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.title-galeria {
+    background-image: url('../../assets/vectortitle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    width: 100%;
+    text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.9);
+    margin-top: 200px;
+    margin-bottom: 50px;
+
+}
+
+.title-galeria h3 {
+    text-align: center;
+    font-size: 60px;
+    font-family: "Gobold", sans-serif;
+    margin: 0;
+}
+
+.carousel {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.carousel-container {
+    background-image: url('../../assets/Images/grill.jpg');
+    background-size: cover;
+    width: 720px;
+    height: 420px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.carousel-container img {
+    width: 600px;
+    height: 330px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.left {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.left i {
+    font-size: 30px;
+    background-color: black;
+    color: #f46d00;
+    padding: 5px;
+    border-radius: 20px;
+    opacity: 0.8;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.left i:hover {
+    opacity: 1;
+}
+
+.rigth {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rigth i {
+    font-size: 30px;
+    background-color: black;
+    color: #f46d00;
+    padding: 5px;
+    border-radius: 20px;
+    opacity: 0.8;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.rigth i:hover {
+    opacity: 1;
+}
+
+.circles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.active {
+    width: 13px;
+    height: 13px;
+    background-color: #f46d00;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.point {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border: 1px #f46d00 solid;
+    border-radius: 50%;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.youtube-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    background-color: black;
+    color: #f46d00;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 5px 0;
+}
+
+
+.youtube-contenido i {
+    margin: 0;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.videos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.video-galeria {
+    background-color: black;
+    margin-bottom: 50px;
+}

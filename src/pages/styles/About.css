@@ -153,19 +153,19 @@
 
 
 
-.item8 {
+.texto {
     grid-column: 3 / 5;
     grid-row: 2 / 3;
     color: white;
     justify-self: center;
     align-self: center;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 
 }
 
-.item8 p {
+.texto p {
     margin: 0;
 }
 
@@ -179,15 +179,7 @@
         gap: 40px;
     }
 
-
-
-    .item8 {
-        font-size: 30px;
-        padding: 20px;
-    }
-
     .title1 {
-        font-size: 75px;
         top: 12%;
         left: 40%;
         transform: translateX(-50%);
@@ -196,7 +188,6 @@
     }
 
     .title2 {
-        font-size: 75px;
         top: 45%;
         left: 60%;
         transform: translateX(-50%);

@@ -17,6 +17,7 @@ const Footer = () => {
                     <div className='icons'>
                         <a target='_blank' href="https://www.facebook.com/LaparrilladeVick?mibextid=ZbWKwL"><i className='bx bxl-facebook-circle'></i></a>
                         <a target='_blank' href="https://www.instagram.com/laparrilladevick/?igshid=MzRlODBiNWFlZA%3D%3D"><i className='bx bxl-instagram'></i></a>
+                        <a href="https://www.youtube.com/" target='_blank'><i className='bx bxl-youtube'></i></a>
 
                     </div>
                     <div className='telefono'>
