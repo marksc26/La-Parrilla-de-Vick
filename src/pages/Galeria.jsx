@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Header from '../layout/Header'
 import './styles/Galeria.css'
 import Footer from '../layout/Footer'
@@ -16,7 +16,6 @@ import img11 from '../assets/Images/car11.jpg'
 import img12 from '../assets/Images/car12.jpg'
 import img13 from '../assets/Images/car13.jpg'
 import img14 from '../assets/Images/car14.jpg'
-import video from '../assets/videos/video-gallery.mp4'
 import video2 from '../assets/videos/video-gallery2.mp4'
 
 
@@ -25,77 +24,28 @@ const Galeria = () => {
 
 
     const images = [
-        {
-            id: 1,
-            image: img1
-        },
-        {
-            id: 2,
-            image: img2
-        },
-        {
-            id: 3,
-            image: img3
-        },
-        {
-            id: 4,
-            image: img4
-        },
-        {
-            id: 5,
-            image: img5
-        },
-        {
-            id: 6,
-            image: img6
-        },
-        {
-            id: 7,
-            image: img7
-        },
-        {
-            id: 8,
-            image: img8
-        },
-        {
-            id: 9,
-            image: img9
-        },
-        {
-            id: 10,
-            image: img10
-        },
-        {
-            id: 11,
-            image: img11
-        },
-        {
-            id: 12,
-            image: img12
-        },
-        {
-            id: 13,
-            image: img13
-        },
-        {
-            id: 14,
-            image: img14
-        }
+        { id: 1, image: img1 },
+        { id: 2, image: img2 },
+        { id: 3, image: img3 },
+        { id: 4, image: img4 },
+        { id: 5, image: img5 },
+        { id: 6, image: img6 },
+        { id: 7, image: img7 },
+        { id: 8, image: img8 },
+        { id: 9, image: img9 },
+        { id: 10, image: img10 },
+        { id: 11, image: img11 },
+        { id: 12, image: img12 },
+        { id: 13, image: img13 },
+        { id: 14, image: img14 }
     ]
 
     const videos = [
-        {
-            id: 1,
-            video: video
-        },
-        {
-            id: 2,
-            video: video2
-        }
+        { id: 2, video: video2 }
     ]
 
     const [value, setValue] = useState(0)
-    const [valueOne, setValueOne] = useState(0)
+
 
     const prevImage = () => {
         setValue((value - 1 + images.length) % images.length)
@@ -116,19 +66,33 @@ const Galeria = () => {
 
 
 
-    const prevVideo = () => {
-        setValueOne((valueOne - 1 + videos.length) % videos.length)
-    }
+    const touchStartX = useRef(null)
 
-    const nextVideo = () => {
-        setValueOne((valueOne + 1) % videos.length)
+    const handleTouchStart = (e) => {
+        touchStartX.current = e.touches[0].clientX;
+    };
 
-    }
+    const handleTouchMove = (e) => {
+        if (touchStartX.current === null) return;
+
+        const touchEndX = e.touches[0].clientX;
+        const deltaX = touchEndX - touchStartX.current;
+
+        if (deltaX > 50) {
+            prevImage();
+        } else if (deltaX < -50) {
+            nextImage();
+        }
+
+        touchStartX.current = null;
+    };
 
 
 
     return (
-        <section className='galeria-section'>
+        <section className='galeria-section'
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}>
 
             <div>
                 <Header />
@@ -148,8 +112,9 @@ const Galeria = () => {
                     <img src={images[value].image} alt="" />
 
                     <div>
-                        <button className='rigth' onClick={nextImage}><i className='bx bx-right-arrow'></i></button>
+                        <button className='right' onClick={nextImage}><i className='bx bx-right-arrow'></i></button>
                     </div>
+
                 </div>
                 <div className='circles'>
                     {
@@ -164,7 +129,7 @@ const Galeria = () => {
 
                     {
                         videos.map((videos, index) => (
-                            <video key={index} className='video-galeria' controls width="500" height="290" controlsList="nodownload">
+                            <video key={index} className='video-galeria' controls controlsList="nodownload">
                                 <source src={videos.video} type="video/mp4" />
                             </video>
                         ))

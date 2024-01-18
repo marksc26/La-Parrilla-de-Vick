@@ -59,12 +59,144 @@
 
 }
 
+.carousel-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.carousel-container-home {
+    background-image: url('../../assets/Images/grill.jpg');
+    background-size: cover;
+    width: 720px;
+    height: 420px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.carousel-container-home img {
+    width: 600px;
+    height: 330px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.left-home {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+
+}
+
+.left-home i {
+    font-size: 30px;
+    background-color: black;
+    color: #f46d00;
+    padding: 5px;
+    border-radius: 20px;
+    opacity: 0.8;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.left-home i:hover {
+    opacity: 1;
+}
+
+.right-home {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.right-home i {
+    font-size: 30px;
+    background-color: black;
+    color: #f46d00;
+    padding: 5px;
+    border-radius: 20px;
+    opacity: 0.8;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.right-home i:hover {
+    opacity: 1;
+}
+
+
+
+.circles-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.active-home {
+    width: 13px;
+    height: 13px;
+    background-color: #f46d00;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.point-home {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border: 1px #f46d00 solid;
+    border-radius: 50%;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+
 
 
 
 @media(min-width: 1450px) {
     .titlePage {
         font-size: 50px;
+    }
+}
+
+@media(max-width: 810px) {
+
+    .title-galeria {
+        margin-top: 150px;
+    }
+
+    .carousel-container-home {
+        width: 500px;
+        height: 275px;
+
+    }
+
+    .carousel-container-home img {
+        width: 400px;
+        height: 220px;
+
     }
 }
 
@@ -103,6 +235,20 @@
         padding: 0 10pxÑ;
         margin: 0 auto;
         font-size: 24px;
+
+    }
+}
+
+@media(max-width: 550px) {
+    .carousel-container-home {
+        width: 330px;
+        height: 182px;
+
+    }
+
+    .carousel-container-home img {
+        width: 300px;
+        height: 165px;
 
     }
 }

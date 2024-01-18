@@ -38,10 +38,6 @@
             ],
             "cuts": [
                 {
-                    "id": 8,
-                    "name": "VACÍO"
-                },
-                {
                     "id": 9,
                     "name": "TOP SIRLOIN"
                 },
@@ -73,7 +69,7 @@
                 },
                 {
                     "id": 16,
-                    "name": "CHINCHULINES"
+                    "name": "CHORIZO CAMPESTRE"
                 },
                 {
                     "id": 17,
@@ -171,7 +167,7 @@
                 },
                 {
                     "id": 14,
-                    "name": "PORTERHOUSE"
+                    "name": "NEW YORK"
                 },
                 {
                     "id": 15,
