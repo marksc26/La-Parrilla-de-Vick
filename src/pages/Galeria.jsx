@@ -65,34 +65,8 @@ const Galeria = () => {
     }, [value, images.length])
 
 
-
-    const touchStartX = useRef(null)
-
-    const handleTouchStart = (e) => {
-        touchStartX.current = e.touches[0].clientX;
-    };
-
-    const handleTouchMove = (e) => {
-        if (touchStartX.current === null) return;
-
-        const touchEndX = e.touches[0].clientX;
-        const deltaX = touchEndX - touchStartX.current;
-
-        if (deltaX > 50) {
-            prevImage();
-        } else if (deltaX < -50) {
-            nextImage();
-        }
-
-        touchStartX.current = null;
-    };
-
-
-
     return (
-        <section className='galeria-section'
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}>
+        <section className='galeria-section'>
 
             <div>
                 <Header />
