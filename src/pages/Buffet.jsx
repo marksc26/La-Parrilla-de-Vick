@@ -71,29 +71,30 @@ const Buffet = () => {
                             <h2><span>${info[0].price}</span> por persona</h2>
                             <h3>SERVICIO MÍNIMO DE 30 PERSONAS</h3>
                         </div>
-
-                        <div className='includes'>
-                            <h3>INCLUYE</h3>
-
-                            <div className='list-includes'>
-                                {
-                                    info[0].includes?.map(item => (
-                                        <div key={item.id}>
-                                            <p>{item.name}</p>
-                                        </div>
-                                    ))
-                                }
-                            </div>
-
-
-                        </div>
-
+                        {
+                            info[0].includes && (
+                                <div className='includes'>
+                                    <h3>INCLUYE</h3>
+                                    <div className='list-includes'>
+                                        {
+                                            info[0].includes?.map(item => (
+                                                <div key={item.id}>
+                                                    <p>{item.name}</p>
+                                                </div>
+                                            ))
+                                        }
+                                    </div>
+                                </div>
+                            )
+                        }
                         <section className='grid-container'>
                             {
                                 info[0].cuts && (
                                     <div className='container'>
-                                        {info[0].cuts && <div className='title-container-info'><h3>CORTES</h3></div>
-                                        }
+                                        <div className='title-container-info'>
+                                            <h3>CORTES</h3>
+                                        </div>
+
                                         <div className='list-container'>
                                             {
 
@@ -134,28 +135,63 @@ const Buffet = () => {
                                     </div>
                                 )
                             }
+                            {
 
+                                info[0].vegetables && (
+                                    <div className='container'>
+                                        <div className='title-container-info'>
+                                            <h3>VEGETALES</h3>
+                                        </div>
+                                        <div className='list-container'>
+                                            {
+                                                info[0].vegetables && (
+                                                    info[0].vegetables.map(item => (
+                                                        <p key={item.id}>{item.name}</p>
+                                                    ))
+                                                )
+                                            }
+                                        </div>
+                                    </div>
+                                )
 
+                            }
 
-
-                            <div className='container'>
-                                <div className='title-container-info'>
-                                    <h3>VEGETALES</h3>
-                                </div>
-
-                                <div className='list-container'>
-                                    {
-                                        info[0].vegetables && (
-                                            info[0].vegetables.map(item => (
-                                                <p key={item.id}>{item.name}</p>
-                                            ))
-                                        )
-                                    }
-                                </div>
-
-
-                            </div>
-
+                            {
+                                info[0].option1 && (
+                                    <div className='container'>
+                                        <div className='title-container-info'>
+                                            <h3>OPCIóN 1</h3>
+                                        </div>
+                                        <div className='list-container'>
+                                            {
+                                                info[0].option1 && (
+                                                    info[0].option1.map(item => (
+                                                        <p key={item.id}>{item.name}</p>
+                                                    ))
+                                                )
+                                            }
+                                        </div>
+                                    </div>
+                                )
+                            }
+                            {
+                                info[0].option2 && (
+                                    <div className='container'>
+                                        <div className='title-container-info'>
+                                            <h3>OPCIóN 2</h3>
+                                        </div>
+                                        <div className='list-container'>
+                                            {
+                                                info[0].option2 && (
+                                                    info[0].option2.map(item => (
+                                                        <p key={item.id}>{item.name}</p>
+                                                    ))
+                                                )
+                                            }
+                                        </div>
+                                    </div>
+                                )
+                            }
                         </section>
 
                     </div>)

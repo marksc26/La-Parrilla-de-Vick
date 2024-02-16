@@ -246,60 +246,100 @@
             "image": "./images/packimg3.jpg",
             "backdrop": "./images/backdrop-sea1.jpg",
             "backdrop_mobile": "./images/backdrop-sea-mobile.jpg",
-            "includes": [
+            "option1": [
                 {
                     "id": 1,
-                    "name": "Pulpo zarandeado"
+                    "name": "PULPO ZARANDEADO"
                 },
                 {
                     "id": 2,
-                    "name": "Vacío"
+                    "name": "PICAÑA CALIDAD CHOICE"
                 },
                 {
                     "id": 3,
-                    "name": "Yakitori de Camarón(brochetas)"
+                    "name": "YAKITORI DE CAMARÓN(BROCHETAS)"
                 },
                 {
                     "id": 4,
-                    "name": "Picaña"
+                    "name": "CABRERÍA(FILETE DE RES CON HUESO)"
                 },
                 {
                     "id": 5,
-                    "name": "Chistorra española"
+                    "name": "CHISTORRA ESPAÑOLA"
                 },
                 {
-                    "id": 5,
-                    "name": "3 Vegetales grill a elegir"
-                }
-            ],
-            "vegetables": [
+                    "id": 6,
+                    "name": "PIMIENTOS DE GRATÍN"
+                },
+                {
+                    "id": 7,
+                    "name": "PAN DE AJO"
+                },
+                {
+                    "id": 8,
+                    "name": "PIÑA GRILL"
+                },
+                {
+                    "id": 10,
+                    "name": "SALSA CHIMICHURRI"
+                },
+                {
+                    "id": 11,
+                    "name": "SALSA TOMATE Y AGUACATE"
+                },
                 {
                     "id": 12,
-                    "name": "PIMIENTOS CON QUESO Y CHAMPIÑONES"
+                    "name": "SALSA HABANERO TATEMADA"
+                }
+            ],
+            "option2": [
+                {
+                    "id": 12,
+                    "name": "AGUACHILE DE PULPO"
                 },
                 {
                     "id": 13,
-                    "name": "CALABACITAS"
+                    "name": "PICAÑA CALIDAD CHOICE"
                 },
                 {
                     "id": 14,
-                    "name": "BRÓCOLI"
+                    "name": "AGUACHILE DE CAMARÓN(NEGRO Y ROJO)"
                 },
                 {
                     "id": 15,
-                    "name": "PIÑA"
+                    "name": "FAJITAS DE NEW YORK"
                 },
                 {
                     "id": 16,
-                    "name": "ELOTITOS AMARILLOS"
+                    "name": "CHISTORRA ESPAÑOLA"
                 },
                 {
                     "id": 17,
-                    "name": "ZANAHORIAS"
+                    "name": "ESPARRAGOS CON TOCINO AL GRILL"
                 },
                 {
                     "id": 18,
-                    "name": "BETABEL"
+                    "name": "PAN DE AJO"
+                },
+                {
+                    "id": 19,
+                    "name": "TOSTADAS"
+                },
+                {
+                    "id": 20,
+                    "name": "PIÑA GRILL"
+                },
+                {
+                    "id": 21,
+                    "name": "SALSA CHIMICHURRI"
+                },
+                {
+                    "id": 22,
+                    "name": "SALSA TOMATE Y AGUACATE"
+                },
+                {
+                    "id": 23,
+                    "name": "SALSA HABANERO TATEMADA"
                 }
             ],
             "price": "420"
