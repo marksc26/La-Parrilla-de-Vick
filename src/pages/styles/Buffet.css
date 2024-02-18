@@ -51,6 +51,7 @@
     color: #f46d00;
     text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.9);
     font-family: "Gobold", sans-serif;
+    font-size: 35px;
 }
 
 .requirements h2 {
@@ -66,12 +67,12 @@
 
 .requirements h3 {
     background-color: #f46d00;
-    color: white;
+    color: black;
     text-align: center;
     margin: 0;
-    font-size: 17px;
+    font-size: 20px;
     font-family: "Montserrat", sans-serif;
-    text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.9);
+
 
 }
 
@@ -105,7 +106,7 @@
     border-radius: 20px;
     position: relative;
     margin: 20px;
-    width: 230px;
+    width: 235px;
 }
 
 .grid-container {
@@ -138,15 +139,14 @@
 }
 
 .list-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: auto;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin: 25px 5px 10px;
 }
 
 .list-container p {
-    margin: 2px auto;
+    margin: 0px auto;
     font-size: 12px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
