@@ -13,7 +13,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 700px;
-    height: 70%;
+    height: 450px;
     border-radius: 30px;
 }
 
@@ -224,7 +224,7 @@
 
 @media(min-width: 1450px) {
     .form-container {
-        width: 45%;
+        width: 40%;
 
     }
 
@@ -242,7 +242,7 @@
 @media(max-width:1200px) {
     .form-container {
         width: 700px;
-        height: 90%;
+        height: 430px;
 
     }
 

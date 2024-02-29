@@ -1,3 +1,6 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 .galeria-section {
     background: url('../../assets/Images/background.jpg');
     background-size: cover;
@@ -40,23 +43,29 @@
     background-image: url('../../assets/Images/grill.jpg');
     background-size: cover;
     width: 720px;
-    height: 420px;
+    height: 330px;
     border-radius: 20px;
     margin-bottom: 20px;
     position: relative;
+    overflow: hidden;
 
 }
 
-.carousel-container img {
+.image {
     width: 600px;
     height: 330px;
+}
+
+.image img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-
+    width: 600px;
+    height: 330px;
 }
+
+
 
 .left {
     background-color: transparent;
@@ -75,14 +84,15 @@
     color: #f46d00;
     padding: 5px;
     border-radius: 20px;
-    opacity: 0.8;
     transition: all 300ms ease-in-out;
     cursor: pointer;
+    opacity: 0.8;
 }
 
 .left i:hover {
     opacity: 1;
 }
+
 
 .right {
     background-color: transparent;
@@ -100,64 +110,42 @@
     color: #f46d00;
     padding: 5px;
     border-radius: 20px;
-    opacity: 0.8;
     transition: all 300ms ease-in-out;
     cursor: pointer;
+    opacity: 0.8;
 }
 
 .right i:hover {
     opacity: 1;
 }
 
-
-
 .circles {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     margin-bottom: 30px;
 }
 
 .active {
-    width: 13px;
-    height: 13px;
+    width: 10px;
+    height: 10px;
     background-color: #f46d00;
     border-radius: 50%;
-    cursor: pointer;
+
 
 }
 
 .point {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: black;
     border: 1px #f46d00 solid;
     border-radius: 50%;
     opacity: 0.7;
-    cursor: pointer;
 }
 
-.youtube-contenido {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100px;
-    background-color: black;
-    color: #f46d00;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    padding: 5px 0;
-}
-
-
-.youtube-contenido i {
-    margin: 0;
-    font-size: 50px;
-    cursor: pointer;
-}
 
 .videos-container {
     display: flex;
@@ -182,14 +170,17 @@
 
     .carousel-container {
         width: 500px;
-        height: 275px;
-
+        height: 225px;
     }
 
-    .carousel-container img {
+    .image {
         width: 400px;
-        height: 220px;
+        height: 225px;
+    }
 
+    .image img {
+        width: 400px;
+        height: 225px;
     }
 
     .video-galeria {
@@ -202,13 +193,17 @@
     .carousel-container {
         width: 100%;
         height: 200px;
-        border-radius: 0;
+        border-radius: 10px;
     }
 
+    .image {
+        width: 364px;
+        height: 200px;
+    }
 
-    .carousel-container img {
-        width: 300px;
-        height: 165px;
+    .image img {
+        width: 364px;
+        height: 200px;
 
     }
 
@@ -226,5 +221,23 @@
 
     .title-galeria h3 {
         font-size: 40px;
+    }
+}
+
+@media(max-width : 440px) {
+    .carousel-container {
+        height: 165px;
+
+    }
+
+    .image {
+        width: 300px;
+        height: 165px;
+    }
+
+    .image img {
+        width: 300px;
+        height: 165px;
+
     }
 }

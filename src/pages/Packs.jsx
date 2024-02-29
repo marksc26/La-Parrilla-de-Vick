@@ -38,7 +38,10 @@ const Packs = () => {
                             <div className='info-container'>
                                 <h3>{pack.title}</h3>
                                 <div className='buttonPack' onClick={() => handleCard(pack.id)}>
-                                    <h4>Saber más </h4>
+                                    <div>
+                                        <h4>Saber más </h4>
+                                    </div>
+
                                     <div className='icon'>
                                         <i className='bx bxs-chevrons-right'></i>
                                     </div>
