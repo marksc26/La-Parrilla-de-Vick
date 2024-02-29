@@ -219,14 +219,10 @@
 @media(max-width: 790px) {
     .mainImage {
         background-image: url('../../assets/Images/main4.jpg');
-        background-size: cover;
-        background-position: center;
+        background-size: auto;
+        background-position: 45% 90%;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
     }
 
     .hidden {
@@ -237,6 +233,9 @@
 
     .about-packs {
         background-image: url('../../assets/Images/background2.jpg');
+        background-size: auto;
+        background-position: 45% 90%;
+
     }
 
     .titlePage h3 {

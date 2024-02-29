@@ -5,22 +5,25 @@ import { Link } from 'react-router-dom'
 
 
 
-const Header = () => {
+const Header = ({ showMenu, setShowMenu }) => {
 
     const [menu, setMenu] = useState(false)
 
     const handleMenu = () => {
         setMenu(!menu)
+        setShowMenu(true)
 
     }
 
     const handleClose = () => {
         setMenu(!menu)
+        setShowMenu(false)
 
     }
 
     const handleOption = () => {
         setMenu(false)
+        setShowMenu(false)
 
     }
 

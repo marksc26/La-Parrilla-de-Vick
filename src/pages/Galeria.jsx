@@ -93,7 +93,7 @@ const Galeria = () => {
         pauseOnHover: false,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
-        beforeChange: (current, next) => setValue(next),
+        afterChange: (current, next) => setValue(next)
     };
 
 
