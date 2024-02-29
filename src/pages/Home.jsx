@@ -163,7 +163,7 @@ const Home = () => {
         pauseOnHover: false,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
-        afterChange: (current, next) => setValue(next),
+        beforeChange: (current, next) => setValue(next),
     };
 
 
@@ -177,7 +177,7 @@ const Home = () => {
 
 
     return (
-        <main className={showMenu === false ? "" : "hidden"}>
+        <main>
             <Header
                 setShowMenu={setShowMenu}
                 showMenu={showMenu}
