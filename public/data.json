@@ -2,110 +2,6 @@
     "packs": [
         {
             "id": 1,
-            "title": "Buffet Select",
-            "image": "./images/prime1.jpg",
-            "backdrop": "./images/select-last.jpg",
-            "backdrop_mobile": "./images/select-last.jpg",
-            "includes": [
-                {
-                    "id": 1,
-                    "name": "3 cortes"
-                },
-                {
-                    "id": 2,
-                    "name": "2 complementos"
-                },
-                {
-                    "id": 3,
-                    "name": "3 vegetales"
-                },
-                {
-                    "id": 4,
-                    "name": "Ensalada fresca"
-                },
-                {
-                    "id": 5,
-                    "name": "Salsa chimichurri"
-                },
-                {
-                    "id": 6,
-                    "name": "Salsa tomate"
-                },
-                {
-                    "id": 7,
-                    "name": "Salsa tatemada picante"
-                }
-            ],
-            "cuts": [
-                {
-                    "id": 9,
-                    "name": "TOP SIRLOIN"
-                },
-                {
-                    "id": 10,
-                    "name": "CABRERÍA"
-                },
-                {
-                    "id": 11,
-                    "name": "COSTILLA BANDERA"
-                },
-                {
-                    "id": 12,
-                    "name": "ARRACHERA"
-                }
-            ],
-            "accompaniments": [
-                {
-                    "id": 13,
-                    "name": "CHISTORRA ESPAÑOLA"
-                },
-                {
-                    "id": 14,
-                    "name": "PANELA GRILL A LAS FINAS HIERBAS"
-                },
-                {
-                    "id": 15,
-                    "name": "TUETANOS"
-                },
-                {
-                    "id": 16,
-                    "name": "CHORIZO CAMPESTRE"
-                },
-                {
-                    "id": 17,
-                    "name": "CHORIZO ARGENTINO"
-                }
-            ],
-            "vegetables": [
-                {
-                    "id": 18,
-                    "name": "PIMIENTOS CON QUESO Y CHAMPIÑONES"
-                },
-                {
-                    "id": 19,
-                    "name": "CALABACITAS"
-                },
-                {
-                    "id": 20,
-                    "name": "BRÓCOLI"
-                },
-                {
-                    "id": 21,
-                    "name": "BETABEL"
-                },
-                {
-                    "id": 22,
-                    "name": "ZANAHORIAS"
-                },
-                {
-                    "id": 23,
-                    "name": "PIÑA"
-                }
-            ],
-            "price": "350"
-        },
-        {
-            "id": 2,
             "title": "Buffet Prime",
             "image": "./images/ribeye-prime2.jpg",
             "backdrop": "./images/prime-last.jpg",
@@ -113,31 +9,39 @@
             "includes": [
                 {
                     "id": 1,
-                    "name": "2 cortes"
+                    "name": "2 cortesa elegir"
                 },
                 {
                     "id": 2,
-                    "name": "2 complementos"
-                },
-                {
-                    "id": 3,
-                    "name": "3 vegetales"
-                },
-                {
-                    "id": 4,
-                    "name": "Ensalada fresca"
-                },
-                {
-                    "id": 5,
                     "name": "Salsa chimichurri"
                 },
                 {
+                    "id": 3,
+                    "name": "2 Complementos"
+                },
+                {
+                    "id": 4,
+                    "name": "Salsa tomate con aguacate"
+                },
+                {
+                    "id": 5,
+                    "name": "3 Vegetales"
+                },
+                {
                     "id": 6,
-                    "name": "Salsa de aguacate"
+                    "name": "Salsa tatemada chile chiltepín"
                 },
                 {
                     "id": 7,
-                    "name": "Salsa tatemada chile chiltepín"
+                    "name": "Ensalda fresca"
+                },
+                {
+                    "id": 8,
+                    "name": "Salsa habanero con piña"
+                },
+                {
+                    "id": 9,
+                    "name": "Pan de ajo"
                 }
             ],
             "cuts": [
@@ -155,15 +59,15 @@
                 },
                 {
                     "id": 11,
-                    "name": "COSTILLA BANDERA"
-                },
-                {
-                    "id": 12,
                     "name": "PICAÑA"
                 },
                 {
-                    "id": 13,
+                    "id": 12,
                     "name": "SHOTRIB"
+                },
+                {
+                    "id": 13,
+                    "name": "FILETE de Caña"
                 },
                 {
                     "id": 14,
@@ -171,17 +75,13 @@
                 },
                 {
                     "id": 15,
-                    "name": "AGUJA NORTEÑA"
+                    "name": "COSTILLA BANDERA"
                 }
             ],
             "accompaniments": [
                 {
                     "id": 16,
                     "name": "CHORIZO ARGENTINO"
-                },
-                {
-                    "id": 17,
-                    "name": "PANELA GRILL A LAS FINAS HIERBAS"
                 },
                 {
                     "id": 18,
@@ -215,7 +115,7 @@
                 },
                 {
                     "id": 25,
-                    "name": "MANZANA VERDE AL VINO BLANCO"
+                    "name": "CHAMPIÑONES RELLENOS DE PHILADELPHIA"
                 },
                 {
                     "id": 26,
@@ -236,13 +136,21 @@
                 {
                     "id": 30,
                     "name": "PIÑA"
+                },
+                {
+                    "id": 31,
+                    "name": "PAPITAS AL TOMILLO"
+                },
+                {
+                    "id": 17,
+                    "name": "PANELA GRILL A LAS FINAS HIERBAS"
                 }
             ],
-            "price": "420"
+            "price": "460"
         },
         {
-            "id": 3,
-            "title": "Buffet Mar y Tierra",
+            "id": 2,
+            "title": "Mar y Tierra",
             "image": "./images/packimg3.jpg",
             "backdrop": "./images/backdrop-sea1.jpg",
             "backdrop_mobile": "./images/backdrop-sea-mobile.jpg",
@@ -343,14 +251,14 @@
                 },
                 {
                     "id": 22,
-                    "name": "SALSA TOMATE Y AGUACATE"
+                    "name": "SALSA TOMATE CON AGUACATE"
                 },
                 {
                     "id": 23,
                     "name": "SALSA HABANERO TATEMADA"
                 }
             ],
-            "price": "420"
+            "price": "460"
         }
     ]
 }

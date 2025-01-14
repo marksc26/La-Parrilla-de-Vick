@@ -136,6 +136,7 @@
 
 .title-container-info h3 {
     margin: 0;
+    font-size: 22px;
 }
 
 .list-container {
@@ -147,7 +148,7 @@
 
 .list-container p {
     margin: 0px auto;
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     text-shadow: 3px 1px 10px rgba(0, 0, 0, 0.9);

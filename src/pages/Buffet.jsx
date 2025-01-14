@@ -140,7 +140,7 @@ const Buffet = () => {
                                 info[0].vegetables && (
                                     <div className='container'>
                                         <div className='title-container-info'>
-                                            <h3>VEGETALES</h3>
+                                            <h3>GUARNICIONES</h3>
                                         </div>
                                         <div className='list-container'>
                                             {
