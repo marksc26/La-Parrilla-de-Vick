@@ -34,6 +34,9 @@ import img28 from '../assets/Images/car21.jpg'
 import img29 from '../assets/Images/car22.jpg'
 import img30 from '../assets/Images/car23.jpg'
 import video2 from '../assets/videos/video-gallery2.mp4'
+import video3 from '../assets/videos/video-gallery3.mp4'
+import video4 from '../assets/videos/video-gallery4.mp4'
+import video5 from '../assets/videos/video-gallery5.mp4'
 
 
 const Galeria = () => {
@@ -75,7 +78,10 @@ const Galeria = () => {
     ]
 
     const videos = [
-        { id: 2, video: video2 }
+        { id: 2, video: video2 },
+        { id: 3, video: video3 },
+        { id: 4, video: video4 },
+        { id: 5, video: video5 }
     ]
 
     const PrevArrow = ({ onClick }) => {
