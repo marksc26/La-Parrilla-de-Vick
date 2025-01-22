@@ -32,6 +32,15 @@ import img18 from '../assets/Images/carousel7.jpg'
 import img19 from '../assets/Images/car7.jpg'
 import img20 from '../assets/Images/car8.jpg'
 import img21 from '../assets/Images/car5.jpg'
+import img22 from '../assets/Images/car15.jpg'
+import img23 from '../assets/Images/car16.jpg'
+import img24 from '../assets/Images/car17.jpg'
+import img25 from '../assets/Images/car18.jpg'
+import img26 from '../assets/Images/car19.jpg'
+import img27 from '../assets/Images/car20.jpg'
+import img28 from '../assets/Images/car21.jpg'
+import img29 from '../assets/Images/car22.jpg'
+import img30 from '../assets/Images/car23.jpg'
 import Slider from 'react-slick'
 
 
@@ -123,6 +132,15 @@ const Home = () => {
         { id: 19, image: img19 },
         { id: 20, image: img20 },
         { id: 21, image: img21 },
+        { id: 22, image: img22 },
+        { id: 23, image: img23 },
+        { id: 24, image: img24 },
+        { id: 25, image: img25 },
+        { id: 26, image: img26 },
+        { id: 27, image: img27 },
+        { id: 28, image: img28 },
+        { id: 29, image: img29 },
+        { id: 30, image: img30 },
 
     ]
 
@@ -186,7 +204,7 @@ const Home = () => {
             <section className="mainImage" ref={homeSectionRef}>
                 <div className='titlePage' data-aos='fade-up'>
                     <img className='logoMain' src={logo} alt="" />
-                    <h3>PARRILLADA BUFFET</h3>
+                    <h3>PARRILLADA DE</h3>
                     <h3>CORTES FINOS, MAR Y TIERRA</h3>
                     <p>EVENTOS</p>
                     <h4>Guadalajara Jalisco y zona metropolitana</h4>

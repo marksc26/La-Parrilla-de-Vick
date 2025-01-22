@@ -7,7 +7,15 @@ import img11 from '../assets/Images/pulpo2.jpg'
 import img12 from '../assets/Images/PORTHERHOUSE1.jpg'
 import img13 from '../assets/Images/vacio4.jpg'
 import img14 from '../assets/Images/cowboy2.jpg'
-
+import img15 from '../assets/Images/collage1.jpg'
+import img16 from '../assets/Images/collage2.jpg'
+import img17 from '../assets/Images/collage3.jpg'
+import img18 from '../assets/Images/collage4.jpg'
+import img19 from '../assets/Images/collage5.jpg'
+import img20 from '../assets/Images/collage6.jpg'
+import img21 from '../assets/Images/collage7.jpg'
+import img22 from '../assets/Images/collage8.jpg'
+import img23 from '../assets/Images/collage9.jpg'
 
 
 
@@ -41,22 +49,22 @@ const About = () => {
 
 
                     <div className='item1'>
-                        <img src={img12} alt="" />
+                        <img src={img15} alt="" />
                     </div>
                     <div className='item2'>
-                        <img src={img7} alt="" />
+                        <img src={img19} alt="" />
                     </div>
                     <div className='item3'>
-                        <img src={img13} alt="" />
+                        <img src={img21} alt="" />
                     </div>
                     <div className='item4'>
-                        <img src={img11} alt="" />
+                        <img src={img16} alt="" />
                     </div>
                     <div className='item5'>
-                        <img src={img8} alt="" />
+                        <img src={img22} alt="" />
                     </div>
                     <div className='item6'>
-                        <img src={img14} alt="" />
+                        <img src={img20} alt="" />
                     </div>
 
 
