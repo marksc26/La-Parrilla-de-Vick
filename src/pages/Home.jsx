@@ -41,6 +41,10 @@ import img27 from '../assets/Images/car20.jpg'
 import img28 from '../assets/Images/car21.jpg'
 import img29 from '../assets/Images/car22.jpg'
 import img30 from '../assets/Images/car23.jpg'
+import img31 from '../assets/Images/car24.jpg'
+import img32 from '../assets/Images/car25.jpg'
+import img33 from '../assets/Images/car26.jpg'
+import img34 from '../assets/Images/car27.jpg'
 import Slider from 'react-slick'
 
 
@@ -141,6 +145,10 @@ const Home = () => {
         { id: 28, image: img28 },
         { id: 29, image: img29 },
         { id: 30, image: img30 },
+        { id: 31, image: img31 },
+        { id: 32, image: img32 },
+        { id: 33, image: img33 },
+        { id: 34, image: img34 },
 
     ]
 
@@ -227,6 +235,7 @@ const Home = () => {
                             }
                         </Slider>
                     </div>
+                    {/*
                     <div className='circles-home'>
                         {
                             images.map((image, index) => (
@@ -235,6 +244,7 @@ const Home = () => {
                             ))
                         }
                     </div>
+                   */}
                 </div>
 
 

@@ -33,6 +33,10 @@ import img27 from '../assets/Images/car20.jpg'
 import img28 from '../assets/Images/car21.jpg'
 import img29 from '../assets/Images/car22.jpg'
 import img30 from '../assets/Images/car23.jpg'
+import img31 from '../assets/Images/car24.jpg'
+import img32 from '../assets/Images/car25.jpg'
+import img33 from '../assets/Images/car26.jpg'
+import img34 from '../assets/Images/car27.jpg'
 import video2 from '../assets/videos/video-gallery2.mp4'
 import video3 from '../assets/videos/video-gallery3.mp4'
 import video4 from '../assets/videos/video-gallery4.mp4'
@@ -74,6 +78,10 @@ const Galeria = () => {
         { id: 28, image: img28 },
         { id: 29, image: img29 },
         { id: 30, image: img30 },
+        { id: 31, image: img31 },
+        { id: 32, image: img32 },
+        { id: 33, image: img33 },
+        { id: 34, image: img34 },
 
     ]
 
@@ -152,6 +160,7 @@ const Galeria = () => {
                         }
                     </Slider>
                 </div>
+                {/*
                 <div className='circles'>
                     {
                         images.map((image, index) => (
@@ -159,7 +168,9 @@ const Galeria = () => {
                             </div>
                         ))
                     }
-                </div>
+                </div>   
+                */}
+
 
                 <div className='videos-container'>
 
