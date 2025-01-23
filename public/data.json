@@ -2,7 +2,7 @@
     "packs": [
         {
             "id": 1,
-            "title": "Buffet Prime",
+            "title": "Prime",
             "image": "./images/ribeye-prime2.jpg",
             "backdrop": "./images/prime-last.jpg",
             "backdrop_mobile": "./images/prime-last.jpg",
