@@ -87,7 +87,7 @@ const Buffet = () => {
                                 </div>
                             )
                         }
-                        <section className='grid-container'>
+                        <section className={info[0].section1 ? 'container-golden-flex' : 'grid-container'}>
                             {
                                 info[0].cuts && (
                                     <div className='container'>
@@ -189,6 +189,25 @@ const Buffet = () => {
                                                 )
                                             }
                                         </div>
+                                    </div>
+                                )
+                            }
+                            {
+                                info[0].section1 && (
+                                    <div className='container-golden'>
+                                        <div className='title-container-info'>
+                                            <h3>Paquete</h3>
+                                        </div>
+                                        <div className='list-container'>
+                                            {
+                                                info[0].section1 && (
+                                                    info[0].section1.map(item => (
+                                                        <p key={item.id}>{item.name}</p>
+                                                    ))
+                                                )
+                                            }
+                                        </div>
+
                                     </div>
                                 )
                             }
