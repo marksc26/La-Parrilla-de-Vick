@@ -41,9 +41,8 @@ const About = () => {
 
 
                     <div className='texto'>
-                        <p>Somos un grupo familiar con marca registrada que nos encanta el asado, ponemos en la parrilla todo nuestro conocimiento, pasión, creatividad y amor.
-                            Nuestras parrilladas de cortes finos, mar y tierra, y nuestros exquisitos complementos son un éxito y satisfacción para nuestros clientes.
-                            Todos nuestros productos son de alta calidad, sabor, frescura e innovación con la mejor atención personalizada.
+                        <p>Somos un negocio familiar con preparación, experiencia y respaldo profesional. Nos especializamos en otorgar soluciones que satisfacen las necesidades y gustos de nuestros clientes en el servicio de Catering para eventos familiares y empresariales.
+                            Nuestras parrilladas de CORTES FINOS, MAR Y TIERRA, y nuestros exquisitos complementos, son un éxito y una satisfacción para nuestros clientes. Todos nuestros productos son de alta calidad, Proteínas Certificadas, sabor, frescura, higiene, presentación e innovación, con la mejor atención personalizada.
                         </p>
                     </div>
 

@@ -15,7 +15,7 @@ const Buffet = () => {
         setinfo(packs.filter(pack => pack.id === Number(id)))
 
     }
-
+    ñ
 
     useEffect(() => {
         fetchCard(id)
@@ -69,7 +69,7 @@ const Buffet = () => {
 
                         <div className='requirements'>
                             <h2><span>${info[0].price}</span> por persona</h2>
-                            <h3>SERVICIO MÍNIMO DE 30 PERSONAS</h3>
+                            <h3>SERVICIO MÍNIMO DE 50 PERSONAS</h3>
                         </div>
                         {
                             info[0].includes && (
@@ -147,6 +147,7 @@ const Buffet = () => {
                                                 info[0].vegetables && (
                                                     info[0].vegetables.map(item => (
                                                         <p key={item.id}>{item.name}</p>
+
                                                     ))
                                                 )
                                             }
@@ -160,7 +161,7 @@ const Buffet = () => {
                                 info[0].option1 && (
                                     <div className='container'>
                                         <div className='title-container-info'>
-                                            <h3>OPCIóN 1</h3>
+                                            <h3>INCLUYE</h3>
                                         </div>
                                         <div className='list-container'>
                                             {

@@ -68,6 +68,10 @@
 
 }
 
+.telefono p {
+    font-size: 17px;
+}
+
 
 
 @media(max-width: 550px) {

@@ -43,12 +43,19 @@ import img36 from '../assets/Images/car29.jpg'
 import img37 from '../assets/Images/car30.jpg'
 import img38 from '../assets/Images/car31.jpg'
 import img39 from '../assets/Images/car32.jpg'
+import img40 from '../assets/Images/car33.jpg'
+import img41 from '../assets/Images/car34.jpeg'
+import img42 from '../assets/Images/car35.jpeg'
+import img43 from '../assets/Images/car36.jpeg'
 
-import video2 from '../assets/videos/video-gallery2.mp4'
-import video3 from '../assets/videos/video-gallery3.mp4'
-import video4 from '../assets/videos/video-gallery4.mp4'
-import video5 from '../assets/videos/video-gallery5.mp4'
-import video6 from '../assets/videos/video-gallery6.mp4'
+
+
+import video2 from '../assets/videos/video-gallery1.mp4'
+import video3 from '../assets/videos/video-gallery2.mp4'
+import video4 from '../assets/videos/video-gallery3.mp4'
+import video5 from '../assets/videos/video-gallery4.mp4'
+import video6 from '../assets/videos/video-gallery5.mp4'
+import video7 from '../assets/videos/video-gallery6.mp4'
 
 
 const Galeria = () => {
@@ -95,6 +102,11 @@ const Galeria = () => {
         { id: 37, image: img37 },
         { id: 38, image: img38 },
         { id: 39, image: img39 },
+        { id: 40, image: img40 },
+        { id: 41, image: img41 },
+        { id: 42, image: img42 },
+        { id: 43, image: img43 },
+
 
 
 
@@ -105,7 +117,8 @@ const Galeria = () => {
         { id: 3, video: video3 },
         { id: 4, video: video4 },
         { id: 5, video: video5 },
-        { id: 6, video: video6 }
+        { id: 6, video: video6 },
+        { id: 7, video: video7 }
     ]
 
     const PrevArrow = ({ onClick }) => {

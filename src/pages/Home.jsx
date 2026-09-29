@@ -3,8 +3,8 @@ import './styles/Home.css'
 import Header from '../layout/Header'
 import About from './About'
 import Packs from './Packs'
-import Footer from '../layout/Footer'
-import ButtonWS from '../components/ButtonWS'
+import Footer from '../layout/Footer'/*
+import ButtonWS from '../components/ButtonWS'*/
 import Form from './Form'
 import { useLocation } from 'react-router-dom'
 import AOS from 'aos'
@@ -50,6 +50,9 @@ import img36 from '../assets/Images/car29.jpg'
 import img37 from '../assets/Images/car30.jpg'
 import img38 from '../assets/Images/car31.jpg'
 import img39 from '../assets/Images/car32.jpg'
+import img40 from '../assets/Images/car34.jpeg'
+import img41 from '../assets/Images/car35.jpeg'
+import img42 from '../assets/Images/car36.jpeg'
 import Slider from 'react-slick'
 
 
@@ -63,20 +66,20 @@ const Home = () => {
 
 
 
-    useEffect(() => {
-
-        function buttonws() {
-            setScroll(window.scrollY)
-        }
-
-        window.addEventListener("scroll", buttonws)
-
-        return () => {
-            window.removeEventListener('scroll', buttonws)
-        }
-
-
-    }, [])
+    /* useEffect(() => {
+ 
+         function buttonws() {
+             setScroll(window.scrollY)
+         }
+ 
+         window.addEventListener("scroll", buttonws)
+ 
+         return () => {
+             window.removeEventListener('scroll', buttonws)
+         }
+ 
+ 
+     }, [])*/
 
     const scrollToTop = () => {
         homeSectionRef.current.scrollIntoView({ behavior: 'smooth' })
@@ -159,6 +162,9 @@ const Home = () => {
         { id: 37, image: img37 },
         { id: 38, image: img38 },
         { id: 39, image: img39 },
+        { id: 40, image: img40 },
+        { id: 41, image: img41 },
+        { id: 42, image: img42 },
 
     ]
 
@@ -276,9 +282,9 @@ const Home = () => {
                 showModal && (<Modal setShowModal={setShowModal} />)
             }
 
-            {
+            {/*
                 scroll > 150 && (<ButtonWS scrollToTop={scrollToTop} />)
-            }
+            */}
 
 
             <Footer />

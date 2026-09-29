@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import logows from '../assets/whatsapp2.png'
 import './styles/ButtonWS.css'
 import TopButton from './TopButton'
@@ -25,4 +25,4 @@ const ButtonWS = ({ scrollToTop }) => {
     )
 }
 
-export default ButtonWS
+export default ButtonWS*/

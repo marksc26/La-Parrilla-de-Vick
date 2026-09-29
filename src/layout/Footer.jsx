@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='footer-info'>
                 <div className='logo-container'>
                     <img className='logoFooter' src={logo} alt="" />
-                    <p><i className='bx bx-copyright'></i>2023 La Parrilla de Vick</p>
+                    <p><i className='bx bx-copyright'></i>2026 La Parrilla de Vick</p>
                 </div>
 
                 <div className='social-media'>
@@ -21,7 +21,7 @@ const Footer = () => {
 
                     </div>
                     <div className='telefono'>
-                        <p>Teléfono: 33 1462 3603</p>
+                        <p>Teléfono:  33 29 30 29 19</p>
                         <p>Solo Eventos en Guadalajara, Zona Metropolitana</p>
                     </div>
                 </div>

@@ -82,9 +82,9 @@ const Form = ({ setShowModal }) => {
                         <div className='input3'>
                             <label htmlFor="">Buffet</label>
                             <select name="buffet" id="" {...register("buffet", { required: true })}>
-                                <option value="Select">Select</option>
-                                <option value="Prime">Prime</option>
-                                <option value="Mar y tierra">Mar y tierra</option>
+                                <option value="Select">Prime</option>
+                                <option value="Prime">Mar y Tierra</option>
+                                <option value="Mar y tierra">Golden</option>
                             </select>
 
                         </div>
