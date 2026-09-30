@@ -53,6 +53,8 @@ import img39 from '../assets/Images/car32.jpg'
 import img40 from '../assets/Images/car34.jpeg'
 import img41 from '../assets/Images/car35.jpeg'
 import img42 from '../assets/Images/car36.jpeg'
+import img43 from '../assets/Images/car37.jpg'
+import img44 from '../assets/Images/car38.jpg'
 import Slider from 'react-slick'
 
 
@@ -165,6 +167,8 @@ const Home = () => {
         { id: 40, image: img40 },
         { id: 41, image: img41 },
         { id: 42, image: img42 },
+        { id: 43, image: img43 },
+        { id: 44, image: img44 }
 
     ]
 

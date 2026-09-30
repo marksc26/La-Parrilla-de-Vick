@@ -37,7 +37,6 @@ import img31 from '../assets/Images/car24.jpg'
 import img32 from '../assets/Images/car25.jpg'
 import img33 from '../assets/Images/car26.jpg'
 import img34 from '../assets/Images/car27.jpg'
-
 import img35 from '../assets/Images/car28.jpg'
 import img36 from '../assets/Images/car29.jpg'
 import img37 from '../assets/Images/car30.jpg'
@@ -47,7 +46,8 @@ import img40 from '../assets/Images/car33.jpg'
 import img41 from '../assets/Images/car34.jpeg'
 import img42 from '../assets/Images/car35.jpeg'
 import img43 from '../assets/Images/car36.jpeg'
-
+import img44 from '../assets/Images/car37.jpg'
+import img45 from '../assets/Images/car38.jpg'
 
 
 import video2 from '../assets/videos/video-gallery1.mp4'
@@ -106,6 +106,8 @@ const Galeria = () => {
         { id: 41, image: img41 },
         { id: 42, image: img42 },
         { id: 43, image: img43 },
+        { id: 44, image: img44 },
+        { id: 45, image: img45 },
 
 
 

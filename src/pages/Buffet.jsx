@@ -15,14 +15,14 @@ const Buffet = () => {
         setinfo(packs.filter(pack => pack.id === Number(id)))
 
     }
-    ñ
+
 
     useEffect(() => {
         fetchCard(id)
     }, [id])
 
     const PHONE_NUMBER = import.meta.env.VITE_PHONE_NUMBER
-    const message = `!Hola! Quiero cotizar el ${info[0].title} por favor! 
+    const message = `!Hola! Quiero cotizar el paquete ${info[0].title} por favor! 
     No. de personas:   Fecha de evento:`
     const encodedText = encodeURIComponent(message)
 
